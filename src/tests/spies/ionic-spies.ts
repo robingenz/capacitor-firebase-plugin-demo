@@ -1,8 +1,7 @@
 import { Platform } from '@ionic/angular';
 
-export function createPlatformSpy(): jasmine.SpyObj<Platform> {
-  return jasmine.createSpyObj('Platform', {
+export const createPlatformSpy = (): jasmine.SpyObj<Platform> =>
+  jasmine.createSpyObj('Platform', {
     is: false,
     ready: Promise.resolve(),
   });
-}
