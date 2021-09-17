@@ -7,13 +7,13 @@ import { FirebasePerformance } from '@robingenz/capacitor-firebase-performance';
   styleUrls: ['./firebase-performance.page.scss'],
 })
 export class FirebasePerformancePage {
-  private readonly GH_URL =
+  private readonly githubUrl =
     'https://github.com/robingenz/capacitor-firebase-performance';
 
   constructor() {}
 
   public openOnGithub(): void {
-    window.open(this.GH_URL, '_blank');
+    window.open(this.githubUrl, '_blank');
   }
 
   public async startTrace(): Promise<void> {

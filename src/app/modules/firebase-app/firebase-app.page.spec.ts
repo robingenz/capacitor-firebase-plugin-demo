@@ -16,7 +16,7 @@ describe('FirebaseAppPage', () => {
       fixture = TestBed.createComponent(FirebaseAppPage);
       component = fixture.componentInstance;
       fixture.detectChanges();
-    }),
+    })
   );
 
   it('should create', () => {
