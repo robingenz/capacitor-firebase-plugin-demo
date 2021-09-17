@@ -16,7 +16,7 @@ describe('FirebasePerformancePage', () => {
       fixture = TestBed.createComponent(FirebasePerformancePage);
       component = fixture.componentInstance;
       fixture.detectChanges();
-    }),
+    })
   );
 
   it('should create', () => {

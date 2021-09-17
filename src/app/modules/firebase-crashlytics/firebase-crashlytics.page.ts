@@ -7,13 +7,13 @@ import { FirebaseCrashlytics } from '@capacitor-community/firebase-crashlytics';
   styleUrls: ['./firebase-crashlytics.page.scss'],
 })
 export class FirebaseCrashlyticsPage {
-  private readonly GH_URL =
+  private readonly githubUrl =
     'https://github.com/capacitor-community/firebase-crashlytics';
 
   constructor() {}
 
   public openOnGithub(): void {
-    window.open(this.GH_URL, '_blank');
+    window.open(this.githubUrl, '_blank');
   }
 
   public async crash(): Promise<void> {

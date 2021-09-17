@@ -16,7 +16,7 @@ export class FirebaseAppPage implements OnInit {
   public projectId = '';
   public storageBucket = '';
 
-  private readonly GH_URL =
+  private readonly githubUrl =
     'https://github.com/robingenz/capacitor-firebase-app';
 
   constructor(private readonly platform: Platform) {}
@@ -25,10 +25,10 @@ export class FirebaseAppPage implements OnInit {
     if (!this.platform.is('capacitor')) {
       return;
     }
-    FirebaseApp.getName().then(result => {
+    FirebaseApp.getName().then((result) => {
       this.name = result.name;
     });
-    FirebaseApp.getOptions().then(result => {
+    FirebaseApp.getOptions().then((result) => {
       this.apiKey = result.apiKey;
       this.applicationId = result.applicationId;
       this.databaseUrl = result.databaseUrl;
@@ -39,6 +39,6 @@ export class FirebaseAppPage implements OnInit {
   }
 
   public openOnGithub(): void {
-    window.open(this.GH_URL, '_blank');
+    window.open(this.githubUrl, '_blank');
   }
 }
