@@ -1,0 +1,9 @@
+{
+	"appId": "dev.robingenz.capacitorjs.demo.firebaseplugins",
+	"appName": "capacitor-firebase-plugin-demo",
+	"bundledWebRuntime": false,
+	"npmClient": "npm",
+	"webDir": "www",
+	"plugins": {},
+	"cordova": {}
+}
