@@ -24,7 +24,7 @@
     "@angular/platform-browser-dynamic": "12.1.5",
     "@angular/router": "12.1.5",
     "@capacitor-community/firebase-crashlytics": "1.1.0",
-    "@capacitor/android": "3.2.3",
+    "@capacitor/android": "3.2.4",
     "@capacitor/app": "1.0.3",
     "@capacitor/core": "3.2.3",
     "@capacitor/haptics": "1.0.3",
