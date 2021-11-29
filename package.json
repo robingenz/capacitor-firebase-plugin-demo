@@ -25,7 +25,7 @@
     "@angular/router": "12.1.5",
     "@capacitor-community/firebase-crashlytics": "1.2.0",
     "@capacitor/android": "3.3.2",
-    "@capacitor/app": "1.0.5",
+    "@capacitor/app": "1.0.6",
     "@capacitor/core": "3.3.1",
     "@capacitor/haptics": "1.0.3",
     "@capacitor/ios": "3.3.2",
