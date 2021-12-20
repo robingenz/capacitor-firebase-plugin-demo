@@ -31,7 +31,7 @@
     "@capacitor/ios": "3.3.3",
     "@capacitor/keyboard": "1.2.0",
     "@capacitor/status-bar": "1.0.6",
-    "@ionic/angular": "6.0.0",
+    "@ionic/angular": "6.0.1",
     "@robingenz/capacitor-firebase-app": "1.2.0",
     "@robingenz/capacitor-firebase-performance": "1.3.0",
     "firebase": "9.6.1",
@@ -49,7 +49,7 @@
     "@angular/cli": "13.1.2",
     "@angular/compiler": "13.1.0",
     "@angular/compiler-cli": "13.1.0",
-    "@angular/language-service": "13.1.0",
+    "@angular/language-service": "13.1.1",
     "@capacitor/cli": "3.3.3",
     "@ionic/angular-toolkit": "5.0.3",
     "@ionic/cli": "6.18.1",
@@ -60,7 +60,7 @@
     "@typescript-eslint/parser": "5.6.0",
     "eslint": "8.4.1",
     "eslint-plugin-import": "2.25.3",
-    "eslint-plugin-jsdoc": "37.3.0",
+    "eslint-plugin-jsdoc": "37.4.0",
     "eslint-plugin-prefer-arrow": "1.2.3",
     "jasmine-core": "3.10.1",
     "jasmine-spec-reporter": "7.0.0",
@@ -74,7 +74,7 @@
     "protractor": "7.0.0",
     "puppeteer": "13.0.0",
     "ts-node": "10.4.0",
-    "typescript": "4.5.3"
+    "typescript": "4.5.4"
   },
   "description": "Simple Ionic Angular app to demonstrate the use of certain Capacitor Firebase plugins."
 }
