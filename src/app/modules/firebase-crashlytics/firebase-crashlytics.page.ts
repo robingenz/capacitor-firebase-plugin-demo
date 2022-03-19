@@ -9,7 +9,7 @@ import { FirebaseAnalytics } from '@capacitor-firebase/analytics';
 })
 export class FirebaseCrashlyticsPage {
   private readonly githubUrl =
-    'https://github.com/capacitor-community/firebase-crashlytics';
+    'https://github.com/robingenz/capacitor-firebase';
 
   constructor() {}
 

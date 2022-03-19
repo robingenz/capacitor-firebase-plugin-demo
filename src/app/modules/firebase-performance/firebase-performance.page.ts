@@ -9,7 +9,7 @@ import { FirebasePerformance } from '@capacitor-firebase/performance';
 })
 export class FirebasePerformancePage {
   private readonly githubUrl =
-    'https://github.com/robingenz/capacitor-firebase-performance';
+    'https://github.com/robingenz/capacitor-firebase';
 
   constructor() {}
 

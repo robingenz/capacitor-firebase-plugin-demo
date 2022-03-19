@@ -18,7 +18,7 @@ export class FirebaseAppPage implements OnInit {
   public storageBucket = '';
 
   private readonly githubUrl =
-    'https://github.com/robingenz/capacitor-firebase-app';
+    'https://github.com/robingenz/capacitor-firebase';
 
   constructor(private readonly platform: Platform) {}
 
