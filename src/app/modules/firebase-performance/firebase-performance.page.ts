@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FirebasePerformance } from '@robingenz/capacitor-firebase-performance';
+import { FirebaseAnalytics } from '@capacitor-firebase/analytics';
+import { FirebasePerformance } from '@capacitor-firebase/performance';
 
 @Component({
   selector: 'app-firebase-performance',
@@ -11,6 +12,12 @@ export class FirebasePerformancePage {
     'https://github.com/robingenz/capacitor-firebase-performance';
 
   constructor() {}
+
+  ionViewDidEnter() {
+    FirebaseAnalytics.setCurrentScreen({
+      screenName: 'FirebasePerformancePage'
+    });
+  }
 
   public openOnGithub(): void {
     window.open(this.githubUrl, '_blank');

@@ -10,9 +10,10 @@
 
 The following plugins are included:
 
-- [robingenz/capacitor-firebase-app](https://github.com/robingenz/capacitor-firebase-app)
-- [robingenz/capacitor-firebase-performance](https://github.com/robingenz/capacitor-firebase-performance)
-- [capacitor-community/firebase-crashlytics](https://github.com/capacitor-community/firebase-crashlytics)
+- [capacitor-firebase/analytics](https://github.com/robingenz/capacitor-firebase)
+- [capacitor-firebase/app](https://github.com/robingenz/capacitor-firebase)
+- [capacitor-firebase/performance](https://github.com/robingenz/capacitor-firebase)
+- [capacitor-firebase/crashlytics](https://github.com/robingenz/capacitor-firebase)
 
 ## Development Setup 💻
 

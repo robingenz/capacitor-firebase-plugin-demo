@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FirebaseAnalytics } from '@capacitor-firebase/analytics';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   public plugins = [
+    {
+      name: 'Firebase Analytics',
+      url: '/firebase-analytics',
+    },
     {
       name: 'Firebase App',
       url: '/firebase-app',
@@ -22,4 +27,10 @@ export class HomePage {
   ];
 
   constructor() {}
+
+  ionViewDidEnter() {
+    FirebaseAnalytics.setCurrentScreen({
+      screenName: 'HomePage'
+    });
+  }
 }
