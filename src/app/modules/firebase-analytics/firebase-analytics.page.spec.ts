@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
-
+import { SharedTestingModule } from '@tests/modules';
 import { FirebaseAnalyticsPage } from './firebase-analytics.page';
 
 describe('FirebaseAnalyticsPage', () => {
@@ -11,7 +10,7 @@ describe('FirebaseAnalyticsPage', () => {
     waitForAsync(() => {
       TestBed.configureTestingModule({
         declarations: [FirebaseAnalyticsPage],
-        imports: [IonicModule.forRoot()],
+        imports: [SharedTestingModule],
       }).compileComponents();
 
       fixture = TestBed.createComponent(FirebaseAnalyticsPage);
