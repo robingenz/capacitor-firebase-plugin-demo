@@ -9,9 +9,7 @@ import { environment } from '@env/environment';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(
-    private readonly platform: Platform,
-  ) {
+  constructor(private readonly platform: Platform) {
     this.initializeFirebase();
   }
 

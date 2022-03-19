@@ -41,7 +41,7 @@ export class FirebaseAppPage implements OnInit {
 
   ionViewDidEnter() {
     FirebaseAnalytics.setCurrentScreen({
-      screenName: 'FirebaseAppPage'
+      screenName: 'FirebaseAppPage',
     });
   }
 

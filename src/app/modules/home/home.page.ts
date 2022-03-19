@@ -30,7 +30,7 @@ export class HomePage {
 
   ionViewDidEnter() {
     FirebaseAnalytics.setCurrentScreen({
-      screenName: 'HomePage'
+      screenName: 'HomePage',
     });
   }
 }

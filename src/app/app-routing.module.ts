@@ -35,7 +35,10 @@ const routes: Routes = [
   },
   {
     path: 'firebase-analytics',
-    loadChildren: () => import('./modules/firebase-analytics/firebase-analytics.module').then( m => m.FirebaseAnalyticsPageModule)
+    loadChildren: () =>
+      import('./modules/firebase-analytics/firebase-analytics.module').then(
+        (m) => m.FirebaseAnalyticsPageModule
+      ),
   },
   {
     path: '**',

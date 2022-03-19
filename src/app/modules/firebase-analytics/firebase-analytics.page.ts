@@ -7,15 +7,14 @@ import { FirebaseAnalytics } from '@capacitor-firebase/analytics';
   styleUrls: ['./firebase-analytics.page.scss'],
 })
 export class FirebaseAnalyticsPage {
-
   private readonly githubUrl =
     'https://github.com/robingenz/capacitor-firebase';
 
-  constructor() { }
+  constructor() {}
 
   ionViewDidEnter() {
     FirebaseAnalytics.setCurrentScreen({
-      screenName: 'FirebaseAnalyticsPage'
+      screenName: 'FirebaseAnalyticsPage',
     });
   }
 

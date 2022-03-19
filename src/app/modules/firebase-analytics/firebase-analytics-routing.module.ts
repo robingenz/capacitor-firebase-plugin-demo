@@ -6,8 +6,8 @@ import { FirebaseAnalyticsPage } from './firebase-analytics.page';
 const routes: Routes = [
   {
     path: '',
-    component: FirebaseAnalyticsPage
-  }
+    component: FirebaseAnalyticsPage,
+  },
 ];
 
 @NgModule({

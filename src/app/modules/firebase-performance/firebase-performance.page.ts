@@ -15,7 +15,7 @@ export class FirebasePerformancePage {
 
   ionViewDidEnter() {
     FirebaseAnalytics.setCurrentScreen({
-      screenName: 'FirebasePerformancePage'
+      screenName: 'FirebasePerformancePage',
     });
   }
 

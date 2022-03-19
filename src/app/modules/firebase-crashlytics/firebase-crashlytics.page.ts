@@ -15,7 +15,7 @@ export class FirebaseCrashlyticsPage {
 
   ionViewDidEnter() {
     FirebaseAnalytics.setCurrentScreen({
-      screenName: 'FirebaseCrashlyticsPage'
+      screenName: 'FirebaseCrashlyticsPage',
     });
   }
 
@@ -25,7 +25,7 @@ export class FirebaseCrashlyticsPage {
 
   public async crash(): Promise<void> {
     await FirebaseAnalytics.logEvent({
-      name: 'crash_triggered'
+      name: 'crash_triggered',
     });
     await FirebaseCrashlytics.crash({ message: 'Test' });
   }

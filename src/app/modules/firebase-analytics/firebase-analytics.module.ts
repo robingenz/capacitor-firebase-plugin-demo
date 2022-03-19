@@ -13,8 +13,8 @@ import { FirebaseAnalyticsPage } from './firebase-analytics.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    FirebaseAnalyticsPageRoutingModule
+    FirebaseAnalyticsPageRoutingModule,
   ],
-  declarations: [FirebaseAnalyticsPage]
+  declarations: [FirebaseAnalyticsPage],
 })
 export class FirebaseAnalyticsPageModule {}
