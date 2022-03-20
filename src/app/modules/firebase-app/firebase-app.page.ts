@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FirebaseAnalytics } from '@capacitor-firebase/analytics';
 import { Platform } from '@ionic/angular';
-import { FirebaseApp } from '@robingenz/capacitor-firebase-app';
+import { FirebaseApp } from '@capacitor-firebase/app';
 
 @Component({
   selector: 'app-firebase-app',
@@ -17,7 +18,7 @@ export class FirebaseAppPage implements OnInit {
   public storageBucket = '';
 
   private readonly githubUrl =
-    'https://github.com/robingenz/capacitor-firebase-app';
+    'https://github.com/robingenz/capacitor-firebase';
 
   constructor(private readonly platform: Platform) {}
 
@@ -35,6 +36,12 @@ export class FirebaseAppPage implements OnInit {
       this.gcmSenderId = result.gcmSenderId;
       this.projectId = result.projectId;
       this.storageBucket = result.storageBucket;
+    });
+  }
+
+  ionViewDidEnter() {
+    FirebaseAnalytics.setCurrentScreen({
+      screenName: 'FirebaseAppPage',
     });
   }
 

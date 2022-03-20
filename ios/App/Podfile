@@ -9,16 +9,18 @@ install! 'cocoapods', :disable_input_output_paths => true
 def capacitor_pods
   pod 'Capacitor', :path => '../../node_modules/@capacitor/ios'
   pod 'CapacitorCordova', :path => '../../node_modules/@capacitor/ios'
-  pod 'CapacitorCommunityFirebaseCrashlytics', :path => '../../node_modules/@capacitor-community/firebase-crashlytics'
+  pod 'CapacitorFirebaseAnalytics', :path => '../../node_modules/@capacitor-firebase/analytics'
+  pod 'CapacitorFirebaseApp', :path => '../../node_modules/@capacitor-firebase/app'
+  pod 'CapacitorFirebaseCrashlytics', :path => '../../node_modules/@capacitor-firebase/crashlytics'
+  pod 'CapacitorFirebasePerformance', :path => '../../node_modules/@capacitor-firebase/performance'
   pod 'CapacitorApp', :path => '../../node_modules/@capacitor/app'
   pod 'CapacitorHaptics', :path => '../../node_modules/@capacitor/haptics'
   pod 'CapacitorKeyboard', :path => '../../node_modules/@capacitor/keyboard'
   pod 'CapacitorStatusBar', :path => '../../node_modules/@capacitor/status-bar'
-  pod 'RobingenzCapacitorFirebaseApp', :path => '../../node_modules/@robingenz/capacitor-firebase-app'
-  pod 'RobingenzCapacitorFirebasePerformance', :path => '../../node_modules/@robingenz/capacitor-firebase-performance'
 end
 
 target 'App' do
   capacitor_pods
   # Add your Pods here
+  pod 'CapacitorFirebaseAnalytics/Analytics', :path => '../../node_modules/@capacitor-firebase/analytics'
 end
