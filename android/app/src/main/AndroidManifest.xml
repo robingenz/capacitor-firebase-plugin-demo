@@ -33,6 +33,9 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths"></meta-data>
         </provider>
+
+        <!-- Disable screenview tracking -->
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="false" />
     </application>
 
     <!-- Permissions -->
