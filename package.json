@@ -29,7 +29,7 @@
     "@capacitor-firebase/performance": "0.1.1",
     "@capacitor/android": "3.4.1",
     "@capacitor/app": "1.1.0",
-    "@capacitor/core": "3.4.1",
+    "@capacitor/core": "3.4.3",
     "@capacitor/haptics": "1.1.4",
     "@capacitor/ios": "3.4.1",
     "@capacitor/keyboard": "1.2.2",
