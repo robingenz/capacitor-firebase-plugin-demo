@@ -24,7 +24,7 @@
     "@angular/platform-browser-dynamic": "13.1.0",
     "@angular/router": "13.1.0",
     "@capacitor-firebase/analytics": "0.1.1",
-    "@capacitor-firebase/app": "0.1.1",
+    "@capacitor-firebase/app": "0.2.1",
     "@capacitor-firebase/crashlytics": "0.1.1",
     "@capacitor-firebase/performance": "0.1.1",
     "@capacitor/android": "3.4.1",
