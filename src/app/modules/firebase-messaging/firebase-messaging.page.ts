@@ -1,5 +1,6 @@
 import { Component, NgZone, OnInit } from '@angular/core';
 import { FirebaseMessaging } from '@capacitor-firebase/messaging';
+import { environment } from '@env/environment';
 
 const LOGTAG = '[FirebaseMessagingPage]';
 
@@ -35,8 +36,14 @@ export class FirebaseMessagingPage implements OnInit {
     window.open(this.githubUrl, '_blank');
   }
 
+  public async requestPermissions(): Promise<void> {
+    await FirebaseMessaging.requestPermissions();
+  }
+
   public async getToken(): Promise<void> {
-    const { token } = await FirebaseMessaging.getToken({});
+    const { token } = await FirebaseMessaging.getToken({
+      vapidKey: environment.firebase.vapidKey,
+    });
     this.token = token;
   }
 

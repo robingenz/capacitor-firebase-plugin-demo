@@ -35,6 +35,9 @@
         <ion-label position="fixed">Token</ion-label>
         <ion-input type="text" readonly [value]="token"></ion-input>
       </ion-item>
+      <ion-button (click)="requestPermissions()"
+        >Request Permissions</ion-button
+      >
       <ion-button (click)="getToken()">Get Token</ion-button>
       <ion-button (click)="deleteToken()">Delete Token</ion-button>
     </ion-card-content>
