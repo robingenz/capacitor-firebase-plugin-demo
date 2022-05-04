@@ -17,6 +17,10 @@ export class HomePage {
       url: '/firebase-app',
     },
     {
+      name: 'Firebase Cloud Messaging',
+      url: '/firebase-messaging',
+    },
+    {
       name: 'Firebase Crashlytics',
       url: '/firebase-crashlytics',
     },

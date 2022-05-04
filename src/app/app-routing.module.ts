@@ -41,6 +41,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'firebase-messaging',
+    loadChildren: () =>
+      import('./modules/firebase-messaging/firebase-messaging.module').then(
+        (m) => m.FirebaseMessagingPageModule
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },
