@@ -6,6 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:https": "ng build --configuration production && http-server -p 8100 -c-1 www -S -C cert.pem",
     "build": "ng build --configuration production",
     "test": "ng test",
     "test:ci": "ng test --watch=false --progress=false --code-coverage --browsers=HeadlessChrome",
@@ -13,7 +14,8 @@
     "e2e:ci": "ng e2e --protractorConfig=e2e/protractor-ci.conf.js",
     "lint": "ng lint && npm run prettier -- --check",
     "fmt": "ng lint --fix && npm run prettier -- --write",
-    "prettier": "prettier \"{src,e2e/src}/**/*.{css,scss,html,ts,js}\""
+    "prettier": "prettier \"{src,e2e/src}/**/*.{css,scss,html,ts,js}\"",
+    "generate:cert": "openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem"
   },
   "private": true,
   "dependencies": {
@@ -26,7 +28,7 @@
     "@capacitor-firebase/analytics": "0.2.1",
     "@capacitor-firebase/app": "0.2.1",
     "@capacitor-firebase/crashlytics": "0.2.1",
-    "@capacitor-firebase/messaging": "0.2.1-dev.17f1a69.1651697626",
+    "@capacitor-firebase/messaging": "0.2.1-dev.1fbc146.1651736379",
     "@capacitor-firebase/performance": "0.2.1",
     "@capacitor/android": "3.5.0",
     "@capacitor/app": "1.1.1",
@@ -64,6 +66,7 @@
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jsdoc": "39.2.9",
     "eslint-plugin-prefer-arrow": "1.2.3",
+    "http-server": "14.1.0",
     "jasmine-core": "4.1.0",
     "jasmine-spec-reporter": "7.0.0",
     "karma": "6.3.19",

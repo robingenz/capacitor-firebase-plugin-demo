@@ -1,6 +1,7 @@
 import { Component, NgZone, OnInit } from '@angular/core';
 import { FirebaseMessaging } from '@capacitor-firebase/messaging';
 import { environment } from '@env/environment';
+import { getMessaging, onMessage } from 'firebase/messaging';
 
 const LOGTAG = '[FirebaseMessagingPage]';
 
@@ -30,6 +31,8 @@ export class FirebaseMessagingPage implements OnInit {
     FirebaseMessaging.addListener('notificationActionPerformed', (event) => {
       console.log(`${LOGTAG} notificationActionPerformed`, { event });
     });
+    const messaging = getMessaging();
+    onMessage(messaging, (payload) => console.log(payload));
   }
 
   public openOnGithub(): void {
@@ -41,8 +44,13 @@ export class FirebaseMessagingPage implements OnInit {
   }
 
   public async getToken(): Promise<void> {
+    const serviceWorkerRegistration = await navigator.serviceWorker.register(
+      'firebase-messaging-sw.js',
+      { type: 'module' }
+    );
     const { token } = await FirebaseMessaging.getToken({
       vapidKey: environment.firebase.vapidKey,
+      serviceWorkerRegistration,
     });
     this.token = token;
   }
