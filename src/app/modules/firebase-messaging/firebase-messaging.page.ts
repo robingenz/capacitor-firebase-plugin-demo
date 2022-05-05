@@ -3,7 +3,9 @@ import {
   FirebaseMessaging,
   GetTokenOptions,
 } from '@capacitor-firebase/messaging';
+import { Capacitor } from '@capacitor/core';
 import { environment } from '@env/environment';
+import { Platform } from '@ionic/angular';
 
 const LOGTAG = '[FirebaseMessagingPage]';
 
@@ -33,9 +35,11 @@ export class FirebaseMessagingPage {
         console.log(`${LOGTAG} notificationActionPerformed`, { event });
       });
     });
-    navigator.serviceWorker.addEventListener('message', (event: any) => {
-      console.log(`${LOGTAG} serviceWorker message`, { event });
-    });
+    if (!Capacitor.isNativePlatform()) {
+      navigator.serviceWorker.addEventListener('message', (event: any) => {
+        console.log(`${LOGTAG} serviceWorker message`, { event });
+      });
+    }
   }
 
   public openOnGithub(): void {
@@ -52,6 +56,7 @@ export class FirebaseMessagingPage {
     };
     const { token } = await FirebaseMessaging.getToken(options);
     this.token = token;
+    console.log(token);
   }
 
   public async deleteToken(): Promise<void> {
