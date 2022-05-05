@@ -6,8 +6,8 @@ import { FirebaseMessagingPage } from './firebase-messaging.page';
 const routes: Routes = [
   {
     path: '',
-    component: FirebaseMessagingPage
-  }
+    component: FirebaseMessagingPage,
+  },
 ];
 
 @NgModule({

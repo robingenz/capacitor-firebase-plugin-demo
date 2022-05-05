@@ -9,8 +9,8 @@ describe('FirebaseMessagingPage', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ FirebaseMessagingPage ],
-      imports: [IonicModule.forRoot()]
+      declarations: [FirebaseMessagingPage],
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(FirebaseMessagingPage);
