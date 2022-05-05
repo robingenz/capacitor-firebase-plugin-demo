@@ -6,7 +6,6 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:https": "ng build --configuration production && http-server -p 8100 -c-1 www -S -C cert.pem",
     "build": "ng build --configuration production",
     "test": "ng test",
     "test:ci": "ng test --watch=false --progress=false --code-coverage --browsers=HeadlessChrome",
@@ -14,8 +13,7 @@
     "e2e:ci": "ng e2e --protractorConfig=e2e/protractor-ci.conf.js",
     "lint": "ng lint && npm run prettier -- --check",
     "fmt": "ng lint --fix && npm run prettier -- --write",
-    "prettier": "prettier \"{src,e2e/src}/**/*.{css,scss,html,ts,js}\"",
-    "generate:cert": "openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem"
+    "prettier": "prettier \"{src,e2e/src}/**/*.{css,scss,html,ts,js}\""
   },
   "private": true,
   "dependencies": {
@@ -66,7 +64,6 @@
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jsdoc": "39.2.9",
     "eslint-plugin-prefer-arrow": "1.2.3",
-    "http-server": "14.1.0",
     "jasmine-core": "4.1.0",
     "jasmine-spec-reporter": "7.0.0",
     "karma": "6.3.19",
