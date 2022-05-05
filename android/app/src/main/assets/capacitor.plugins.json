@@ -12,6 +12,10 @@
 		"classpath": "dev.robingenz.capacitorjs.plugins.firebase.crashlytics.FirebaseCrashlyticsPlugin"
 	},
 	{
+		"pkg": "@capacitor-firebase/messaging",
+		"classpath": "dev.robingenz.capacitorjs.plugins.firebase.messaging.FirebaseMessagingPlugin"
+	},
+	{
 		"pkg": "@capacitor-firebase/performance",
 		"classpath": "dev.robingenz.capacitorjs.plugins.firebase.performance.FirebasePerformancePlugin"
 	},

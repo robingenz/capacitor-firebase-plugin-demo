@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { initializeApp } from 'firebase/app';
-import { Platform } from '@ionic/angular';
 import { environment } from '@env/environment';
+import { Platform } from '@ionic/angular';
+import { initializeApp } from 'firebase/app';
 
 @Component({
   selector: 'app-root',
