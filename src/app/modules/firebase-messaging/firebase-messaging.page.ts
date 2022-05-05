@@ -1,5 +1,8 @@
-import { Component, NgZone, OnInit } from '@angular/core';
-import { FirebaseMessaging } from '@capacitor-firebase/messaging';
+import { Component, NgZone } from '@angular/core';
+import {
+  FirebaseMessaging,
+  GetTokenOptions,
+} from '@capacitor-firebase/messaging';
 import { environment } from '@env/environment';
 
 const LOGTAG = '[FirebaseMessagingPage]';
@@ -9,7 +12,7 @@ const LOGTAG = '[FirebaseMessagingPage]';
   templateUrl: './firebase-messaging.page.html',
   styleUrls: ['./firebase-messaging.page.scss'],
 })
-export class FirebaseMessagingPage implements OnInit {
+export class FirebaseMessagingPage {
   public token = '';
 
   private readonly githubUrl =
@@ -30,13 +33,8 @@ export class FirebaseMessagingPage implements OnInit {
         console.log(`${LOGTAG} notificationActionPerformed`, { event });
       });
     });
-  }
-
-  public ngOnInit(): void {
-    FirebaseMessaging.getToken({
-      vapidKey: environment.firebase.vapidKey,
-    }).then((result) => {
-      this.token = result.token;
+    navigator.serviceWorker.addEventListener('message', (event: any) => {
+      console.log(`${LOGTAG} serviceWorker message`, { event });
     });
   }
 
@@ -44,9 +42,20 @@ export class FirebaseMessagingPage implements OnInit {
     window.open(this.githubUrl, '_blank');
   }
 
-  public async requestPermissions(): Promise<void> {}
+  public async requestPermissions(): Promise<void> {
+    await FirebaseMessaging.requestPermissions();
+  }
 
-  public async getToken(): Promise<void> {}
+  public async getToken(): Promise<void> {
+    const options: GetTokenOptions = {
+      vapidKey: environment.firebase.vapidKey,
+    };
+    const { token } = await FirebaseMessaging.getToken(options);
+    this.token = token;
+  }
 
-  public async deleteToken(): Promise<void> {}
+  public async deleteToken(): Promise<void> {
+    await FirebaseMessaging.deleteToken();
+    this.token = '';
+  }
 }
