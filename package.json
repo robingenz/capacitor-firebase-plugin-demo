@@ -28,7 +28,7 @@
     "@capacitor-firebase/crashlytics": "0.2.1",
     "@capacitor-firebase/messaging": "0.2.1-dev.29adfb5.1651758382",
     "@capacitor-firebase/performance": "0.2.1",
-    "@capacitor/android": "3.5.0",
+    "@capacitor/android": "3.5.1",
     "@capacitor/app": "1.1.1",
     "@capacitor/core": "3.5.0",
     "@capacitor/haptics": "1.1.4",
