@@ -75,7 +75,7 @@
     "prettier": "2.6.2",
     "protractor": "7.0.0",
     "puppeteer": "14.1.2",
-    "ts-node": "10.7.0",
+    "ts-node": "10.8.0",
     "typescript": "4.5.5"
   },
   "description": "Simple Ionic Angular app to demonstrate the use of certain Capacitor Firebase plugins."
