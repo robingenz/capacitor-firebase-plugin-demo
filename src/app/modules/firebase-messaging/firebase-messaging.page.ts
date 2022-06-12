@@ -2,10 +2,10 @@ import { Component, NgZone } from '@angular/core';
 import {
   FirebaseMessaging,
   GetTokenOptions,
+  Notification,
 } from '@capacitor-firebase/messaging';
 import { Capacitor } from '@capacitor/core';
 import { environment } from '@env/environment';
-import { Platform } from '@ionic/angular';
 
 const LOGTAG = '[FirebaseMessagingPage]';
 
@@ -16,6 +16,7 @@ const LOGTAG = '[FirebaseMessagingPage]';
 })
 export class FirebaseMessagingPage {
   public token = '';
+  public deliveredNotifications: Notification[] = [];
 
   private readonly githubUrl =
     'https://github.com/robingenz/capacitor-firebase';
@@ -56,11 +57,29 @@ export class FirebaseMessagingPage {
     };
     const { token } = await FirebaseMessaging.getToken(options);
     this.token = token;
-    console.log(token);
   }
 
   public async deleteToken(): Promise<void> {
     await FirebaseMessaging.deleteToken();
     this.token = '';
+  }
+
+  public async getDeliveredNotifications(): Promise<void> {
+    const result = await FirebaseMessaging.getDeliveredNotifications();
+    this.deliveredNotifications = result.notifications;
+  }
+
+  public async removeAllDeliveredNotifications(): Promise<void> {
+    await FirebaseMessaging.removeAllDeliveredNotifications();
+    await this.getDeliveredNotifications();
+  }
+
+  public async removeDeliveredNotifications(
+    notification: Notification
+  ): Promise<void> {
+    await FirebaseMessaging.removeDeliveredNotifications({
+      notifications: [notification],
+    });
+    await this.getDeliveredNotifications();
   }
 }
