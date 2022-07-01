@@ -134,7 +134,8 @@
               "devServerTarget": "app:serve:production"
             },
             "ci": {
-              "devServerTarget": "app:serve:ci"
+              "devServerTarget": "app:serve:ci",
+              "protractorConfig": "e2e/protractor-ci.conf.js"
             }
           }
         },
