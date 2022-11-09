@@ -20,6 +20,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'firebase-app-check',
+    loadChildren: () =>
+      import('./modules/firebase-app-check/firebase-app-check.module').then(
+        (m) => m.FirebaseAppCheckPageModule
+      ),
+  },
+  {
     path: 'firebase-performance',
     loadChildren: () =>
       import('./modules/firebase-performance/firebase-performance.module').then(

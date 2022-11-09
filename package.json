@@ -23,6 +23,7 @@
     "@angular/router": "14.2.4",
     "@capacitor-firebase/analytics": "1.1.0",
     "@capacitor-firebase/app": "1.1.0",
+    "@capacitor-firebase/app-check": "1.2.0-dev.c2371d8.1667689388",
     "@capacitor-firebase/crashlytics": "1.1.0",
     "@capacitor-firebase/messaging": "1.1.0",
     "@capacitor-firebase/performance": "1.1.0",
