@@ -56,6 +56,7 @@ export class FirebaseMessagingPage {
       vapidKey: environment.firebase.vapidKey,
     };
     const { token } = await FirebaseMessaging.getToken(options);
+    console.log(token);
     this.token = token;
   }
 

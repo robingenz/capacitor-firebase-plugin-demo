@@ -11,6 +11,7 @@ import {
   styleUrls: ['./firebase-app-check.page.scss'],
 })
 export class FirebaseAppCheckPage {
+  public useDebugProvider = false;
   public token = '';
 
   private readonly githubUrl =
@@ -24,7 +25,7 @@ export class FirebaseAppCheckPage {
 
   public async initialize(): Promise<void> {
     const options: InitializeOptions = {
-      debug: true,
+      debug: this.useDebugProvider,
     };
     await FirebaseAppCheck.initialize(options);
   }
