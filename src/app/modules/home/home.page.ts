@@ -17,6 +17,10 @@ export class HomePage {
       url: '/firebase-app',
     },
     {
+      name: 'Firebase App Check',
+      url: '/firebase-app-check',
+    },
+    {
       name: 'Firebase Cloud Messaging',
       url: '/firebase-messaging',
     },
