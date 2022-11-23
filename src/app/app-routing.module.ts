@@ -55,6 +55,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'firebase-remote-config',
+    loadChildren: () =>
+      import(
+        './modules/firebase-remote-config/firebase-remote-config.module'
+      ).then((m) => m.FirebaseRemoteConfigPageModule),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },

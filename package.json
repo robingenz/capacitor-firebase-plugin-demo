@@ -27,6 +27,7 @@
     "@capacitor-firebase/crashlytics": "1.2.0",
     "@capacitor-firebase/messaging": "1.2.0",
     "@capacitor-firebase/performance": "1.2.0",
+    "@capacitor-firebase/remote-config": "1.2.0-dev.93b28c1.1669212870",
     "@capacitor/android": "4.3.0",
     "@capacitor/app": "4.0.1",
     "@capacitor/core": "4.3.0",

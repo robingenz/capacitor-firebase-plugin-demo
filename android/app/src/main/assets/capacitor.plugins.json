@@ -24,6 +24,10 @@
 		"classpath": "io.capawesome.capacitorjs.plugins.firebase.performance.FirebasePerformancePlugin"
 	},
 	{
+		"pkg": "@capacitor-firebase/remote-config",
+		"classpath": "io.capawesome.capacitorjs.plugins.firebase.remoteconfig.FirebaseRemoteConfigPlugin"
+	},
+	{
 		"pkg": "@capacitor/app",
 		"classpath": "com.capacitorjs.plugins.app.AppPlugin"
 	},

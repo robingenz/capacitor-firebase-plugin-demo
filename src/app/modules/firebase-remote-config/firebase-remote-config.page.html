@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Firebase Remote Config</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>About</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      ⚡️ Capacitor plugin for Firebase Remote Config.
+    </ion-card-content>
+    <ion-row class="ion-no-padding">
+      <ion-col>
+        <ion-button
+          fill="clear"
+          (click)="openOnGithub()"
+          class="ion-float-right"
+          >GitHub</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Demo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Key</ion-label>
+        <ion-input [(ngModel)]="key"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Value</ion-label>
+        <ion-input [(ngModel)]="value" [readonly]="true"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Source</ion-label>
+        <ion-input [(ngModel)]="source" [readonly]="true"></ion-input>
+      </ion-item>
+      <ion-button (click)="activate()">Activate</ion-button>
+      <ion-button (click)="fetchAndActivate()">Fetch and activate</ion-button>
+      <ion-button (click)="activate()">Activate</ion-button>
+      <ion-button (click)="getBoolean()">Get Boolean</ion-button>
+      <ion-button (click)="getNumber()">Get Number</ion-button>
+      <ion-button (click)="getString()">Get String</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

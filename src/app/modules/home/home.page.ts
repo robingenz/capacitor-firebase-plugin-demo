@@ -32,6 +32,10 @@ export class HomePage {
       name: 'Firebase Performance',
       url: '/firebase-performance',
     },
+    {
+      name: 'Firebase Remote Config',
+      url: '/firebase-remote-config',
+    },
   ];
 
   constructor() {}

@@ -15,6 +15,7 @@ dependencies {
     implementation project(':capacitor-firebase-crashlytics')
     implementation project(':capacitor-firebase-messaging')
     implementation project(':capacitor-firebase-performance')
+    implementation project(':capacitor-firebase-remote-config')
     implementation project(':capacitor-app')
     implementation project(':capacitor-haptics')
     implementation project(':capacitor-keyboard')
