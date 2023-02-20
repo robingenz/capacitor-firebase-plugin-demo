@@ -44,9 +44,96 @@
   </ion-card>
   <ion-card>
     <ion-card-header>
+      <ion-card-title>Channels</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="createChannelFormGroup">
+        <ion-item>
+          <ion-label position="fixed">ID</ion-label>
+          <ion-input formControlName="id"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Name</ion-label>
+          <ion-input formControlName="name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Description</ion-label>
+          <ion-input formControlName="description"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Importance</ion-label>
+          <ion-select formControlName="importance">
+            <ion-select-option [value]="importance.Min">Min</ion-select-option>
+            <ion-select-option [value]="importance.Low">Low</ion-select-option>
+            <ion-select-option [value]="importance.Default"
+              >Default</ion-select-option
+            >
+            <ion-select-option [value]="importance.High"
+              >High</ion-select-option
+            >
+            <ion-select-option [value]="importance.Max">Max</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Visibility</ion-label>
+          <ion-select formControlName="visibility">
+            <ion-select-option [value]="visibility.Secret"
+              >Secret</ion-select-option
+            >
+            <ion-select-option [value]="visibility.Private"
+              >Private</ion-select-option
+            >
+            <ion-select-option [value]="visibility.Public"
+              >Public</ion-select-option
+            >
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Sound</ion-label>
+          <ion-input formControlName="sound"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Light Color</ion-label>
+          <ion-input formControlName="lightColor"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Lights</ion-label>
+          <ion-toggle formControlName="lights"></ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Vibration</ion-label>
+          <ion-toggle formControlName="vibration"></ion-toggle>
+        </ion-item>
+      </form>
+      <ion-button (click)="createChannel()">Create Channel</ion-button>
+      <ion-button (click)="listChannels()">List Channels</ion-button>
+      <ion-list>
+        <ion-item-sliding *ngFor="let channel of channels">
+          <ion-item>
+            <ion-label>
+              <h3>{{ channel.name }}</h3>
+              <p>{{ channel.description}}</p>
+            </ion-label>
+            <ion-note slot="end">{{channel.id}}</ion-note>
+          </ion-item>
+          <ion-item-options side="end" (ionSwipe)="deleteChannel(channel)">
+            <ion-item-option color="danger">Remove</ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
       <ion-card-title>Delivered Notifications</ion-card-title>
     </ion-card-header>
     <ion-card-content>
+      <ion-button (click)="getDeliveredNotifications()"
+        >Get delivered notifications</ion-button
+      >
+      <ion-button (click)="removeAllDeliveredNotifications()"
+        >Remove all delivered notifications</ion-button
+      >
       <ion-list>
         <ion-item-sliding *ngFor="let notification of deliveredNotifications">
           <ion-item>
@@ -65,12 +152,6 @@
           </ion-item-options>
         </ion-item-sliding>
       </ion-list>
-      <ion-button (click)="getDeliveredNotifications()"
-        >Get delivered notifications</ion-button
-      >
-      <ion-button (click)="removeAllDeliveredNotifications()"
-        >Remove all delivered notifications</ion-button
-      >
     </ion-card-content>
   </ion-card>
 </ion-content>

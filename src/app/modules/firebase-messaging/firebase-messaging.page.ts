@@ -1,8 +1,12 @@
 import { Component, NgZone } from '@angular/core';
+import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import {
+  Channel,
   FirebaseMessaging,
   GetTokenOptions,
+  Importance,
   Notification,
+  Visibility,
 } from '@capacitor-firebase/messaging';
 import { Capacitor } from '@capacitor/core';
 import { environment } from '@env/environment';
@@ -15,8 +19,23 @@ const LOGTAG = '[FirebaseMessagingPage]';
   styleUrls: ['./firebase-messaging.page.scss'],
 })
 export class FirebaseMessagingPage {
+  public readonly importance = Importance;
+  public readonly visibility = Visibility;
+
   public token = '';
   public deliveredNotifications: Notification[] = [];
+  public channels: Channel[] = [];
+  public createChannelFormGroup = new UntypedFormGroup({
+    description: new UntypedFormControl(''),
+    id: new UntypedFormControl(''),
+    importance: new UntypedFormControl(Importance.Default),
+    lightColor: new UntypedFormControl(''),
+    lights: new UntypedFormControl(false),
+    name: new UntypedFormControl(''),
+    sound: new UntypedFormControl(''),
+    vibration: new UntypedFormControl(false),
+    visibility: new UntypedFormControl(Visibility.Private),
+  });
 
   private readonly githubUrl =
     'https://github.com/robingenz/capacitor-firebase';
@@ -63,6 +82,50 @@ export class FirebaseMessagingPage {
   public async deleteToken(): Promise<void> {
     await FirebaseMessaging.deleteToken();
     this.token = '';
+  }
+
+  public async createChannel(): Promise<void> {
+    const description =
+      this.createChannelFormGroup.get('description')?.value || '';
+    const id = this.createChannelFormGroup.get('id')?.value || '';
+    const importance =
+      this.createChannelFormGroup.get('importance')?.value ||
+      Importance.Default;
+    const lightColor =
+      this.createChannelFormGroup.get('lightColor')?.value || '';
+    const lights = this.createChannelFormGroup.get('lights')?.value || false;
+    const name = this.createChannelFormGroup.get('name')?.value || '';
+    const sound = this.createChannelFormGroup.get('sound')?.value || '';
+    const vibration =
+      this.createChannelFormGroup.get('vibration')?.value || false;
+    const visibility =
+      this.createChannelFormGroup.get('visibility')?.value ||
+      Visibility.Private;
+
+    await FirebaseMessaging.createChannel({
+      description,
+      id,
+      importance,
+      lightColor,
+      lights,
+      name,
+      sound,
+      vibration,
+      visibility,
+    });
+    await this.listChannels();
+  }
+
+  public async deleteChannel(channel: Channel): Promise<void> {
+    await FirebaseMessaging.deleteChannel({
+      id: channel.id,
+    });
+    await this.listChannels();
+  }
+
+  public async listChannels(): Promise<void> {
+    const { channels } = await FirebaseMessaging.listChannels();
+    this.channels = channels;
   }
 
   public async getDeliveredNotifications(): Promise<void> {
