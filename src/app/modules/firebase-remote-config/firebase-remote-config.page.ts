@@ -64,11 +64,11 @@ export class FirebaseRemoteConfigPage {
     source: GetValueSource | undefined
   ): string {
     switch (source) {
-      case GetValueSource.ValueSourceDefault:
+      case GetValueSource.Default:
         return 'Default';
-      case GetValueSource.ValueSourceRemote:
+      case GetValueSource.Remote:
         return 'Remote';
-      case GetValueSource.ValueSourceStatic:
+      case GetValueSource.Static:
         return 'Static';
       default:
         return 'Unknown';

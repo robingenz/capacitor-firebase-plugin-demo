@@ -6,13 +6,21 @@ import { FirebaseAnalytics } from '@capacitor-firebase/analytics';
   templateUrl: './firebase-analytics.page.html',
   styleUrls: ['./firebase-analytics.page.scss'],
 })
-export class FirebaseAnalyticsPage {
+export class FirebaseAnalyticsPage implements OnInit {
+  public appInstanceId = '';
+
   private readonly githubUrl =
     'https://github.com/robingenz/capacitor-firebase';
 
   constructor() {}
 
-  ionViewDidEnter() {
+  public ngOnInit(): void {
+    FirebaseAnalytics.getAppInstanceId().then((result) => {
+      this.appInstanceId = result.appInstanceId || '';
+    });
+  }
+
+  public ionViewDidEnter(): void {
     FirebaseAnalytics.setCurrentScreen({
       screenName: 'FirebaseAnalyticsPage',
     });

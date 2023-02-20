@@ -31,6 +31,10 @@
       <ion-card-title>Demo</ion-card-title>
     </ion-card-header>
     <ion-card-content>
+      <ion-item>
+        <ion-label position="fixed">App Instance ID</ion-label>
+        <ion-input type="text" readonly [value]="appInstanceId"></ion-input>
+      </ion-item>
       <ion-button (click)="enable()">Enable</ion-button>
       <ion-button (click)="disable()">Disable</ion-button>
     </ion-card-content>
