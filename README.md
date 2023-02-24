@@ -1,6 +1,6 @@
 # capacitor-firebase-plugin-demo
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/robingenz/capacitor-firebase-plugin-demo/CI/main)](https://github.com/robingenz/capacitor-firebase-plugin-demo/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/robingenz/capacitor-firebase-plugin-demo/ci.yml?branch=main)](https://github.com/robingenz/capacitor-firebase-plugin-demo/actions)
 
 <!-- [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/robingenz/capacitor-firebase-plugin-demo?color=brightgreen&label=version)](https://github.com/robingenz/capacitor-firebase-plugin-demo/releases) -->
 
@@ -10,12 +10,12 @@
 
 The following plugins are included:
 
-- [capacitor-firebase/analytics](https://github.com/robingenz/capacitor-firebase)
-- [capacitor-firebase/app](https://github.com/robingenz/capacitor-firebase)
-- [capacitor-firebase/app-check](https://github.com/robingenz/capacitor-firebase)
-- [capacitor-firebase/crashlytics](https://github.com/robingenz/capacitor-firebase)
-- [capacitor-firebase/messaging](https://github.com/robingenz/capacitor-firebase)
-- [capacitor-firebase/performance](https://github.com/robingenz/capacitor-firebase)
+- [capacitor-firebase/analytics](https://github.com/capawesome-team/capacitor-firebase)
+- [capacitor-firebase/app](https://github.com/capawesome-team/capacitor-firebase)
+- [capacitor-firebase/app-check](https://github.com/capawesome-team/capacitor-firebase)
+- [capacitor-firebase/crashlytics](https://github.com/capawesome-team/capacitor-firebase)
+- [capacitor-firebase/messaging](https://github.com/capawesome-team/capacitor-firebase)
+- [capacitor-firebase/performance](https://github.com/capawesome-team/capacitor-firebase)
 
 ## Development Setup 💻
 
