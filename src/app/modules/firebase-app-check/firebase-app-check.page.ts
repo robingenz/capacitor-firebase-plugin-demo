@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FirebaseAnalytics } from '@capacitor-firebase/analytics';
 import {
   FirebaseAppCheck,
   GetTokenOptions,
@@ -18,6 +19,12 @@ export class FirebaseAppCheckPage {
     'https://github.com/robingenz/capacitor-firebase';
 
   constructor() {}
+
+  public ionViewDidEnter() {
+    FirebaseAnalytics.setCurrentScreen({
+      screenName: 'FirebaseAppPage',
+    });
+  }
 
   public openOnGithub(): void {
     window.open(this.githubUrl, '_blank');
