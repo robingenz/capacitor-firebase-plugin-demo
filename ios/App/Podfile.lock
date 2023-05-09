@@ -4,30 +4,30 @@ PODS:
   - CapacitorApp (5.0.0-beta.1):
     - Capacitor
   - CapacitorCordova (5.0.0-rc.1)
-  - CapacitorFirebaseAnalytics (4.0.0):
+  - CapacitorFirebaseAnalytics (5.0.0-dev.351d12d.1683650804):
     - Capacitor
-    - CapacitorFirebaseAnalytics/Lite (= 4.0.0)
-  - CapacitorFirebaseAnalytics/Analytics (4.0.0):
+    - CapacitorFirebaseAnalytics/Lite (= 5.0.0-dev.351d12d.1683650804)
+  - CapacitorFirebaseAnalytics/Analytics (5.0.0-dev.351d12d.1683650804):
     - Capacitor
     - FirebaseAnalytics (= 10.8.0)
-  - CapacitorFirebaseAnalytics/Lite (4.0.0):
+  - CapacitorFirebaseAnalytics/Lite (5.0.0-dev.351d12d.1683650804):
     - Capacitor
-  - CapacitorFirebaseApp (4.0.0):
+  - CapacitorFirebaseApp (5.0.0):
     - Capacitor
     - FirebaseCore (= 10.8.0)
-  - CapacitorFirebaseAppCheck (4.0.0):
+  - CapacitorFirebaseAppCheck (5.0.0):
     - Capacitor
     - FirebaseAppCheck (= 10.8.0)
-  - CapacitorFirebaseCrashlytics (4.0.0):
+  - CapacitorFirebaseCrashlytics (5.0.0):
     - Capacitor
     - FirebaseCrashlytics (= 10.8.0)
-  - CapacitorFirebaseMessaging (4.0.0):
+  - CapacitorFirebaseMessaging (5.0.0):
     - Capacitor
     - FirebaseMessaging (= 10.8.0)
-  - CapacitorFirebasePerformance (4.0.0):
+  - CapacitorFirebasePerformance (5.0.0):
     - Capacitor
     - FirebasePerformance (= 10.8.0)
-  - CapacitorFirebaseRemoteConfig (4.0.0):
+  - CapacitorFirebaseRemoteConfig (5.0.0):
     - Capacitor
     - FirebaseRemoteConfig (= 10.8.0)
   - CapacitorHaptics (5.0.0-beta.1):
@@ -134,7 +134,7 @@ PODS:
     - GoogleUtilities/Network (~> 7.8)
     - "GoogleUtilities/NSData+zlib (~> 7.8)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleDataTransport (9.2.2):
+  - GoogleDataTransport (9.2.3):
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (< 2.30910.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
@@ -171,14 +171,14 @@ DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorApp (from `../../node_modules/@capacitor/app`)"
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
-  - CapacitorFirebaseAnalytics (from `../../../../capawesome-team/capacitor-firebase/packages/analytics`)
-  - CapacitorFirebaseAnalytics/Analytics (from `../../../../capawesome-team/capacitor-firebase/packages/analytics`)
-  - CapacitorFirebaseApp (from `../../../../capawesome-team/capacitor-firebase/packages/app`)
-  - CapacitorFirebaseAppCheck (from `../../../../capawesome-team/capacitor-firebase/packages/app-check`)
-  - CapacitorFirebaseCrashlytics (from `../../../../capawesome-team/capacitor-firebase/packages/crashlytics`)
-  - CapacitorFirebaseMessaging (from `../../../../capawesome-team/capacitor-firebase/packages/messaging`)
-  - CapacitorFirebasePerformance (from `../../../../capawesome-team/capacitor-firebase/packages/performance`)
-  - CapacitorFirebaseRemoteConfig (from `../../../../capawesome-team/capacitor-firebase/packages/remote-config`)
+  - "CapacitorFirebaseAnalytics (from `../../node_modules/@capacitor-firebase/analytics`)"
+  - "CapacitorFirebaseAnalytics/Analytics (from `../../node_modules/@capacitor-firebase/analytics`)"
+  - "CapacitorFirebaseApp (from `../../node_modules/@capacitor-firebase/app`)"
+  - "CapacitorFirebaseAppCheck (from `../../node_modules/@capacitor-firebase/app-check`)"
+  - "CapacitorFirebaseCrashlytics (from `../../node_modules/@capacitor-firebase/crashlytics`)"
+  - "CapacitorFirebaseMessaging (from `../../node_modules/@capacitor-firebase/messaging`)"
+  - "CapacitorFirebasePerformance (from `../../node_modules/@capacitor-firebase/performance`)"
+  - "CapacitorFirebaseRemoteConfig (from `../../node_modules/@capacitor-firebase/remote-config`)"
   - "CapacitorHaptics (from `../../node_modules/@capacitor/haptics`)"
   - "CapacitorKeyboard (from `../../node_modules/@capacitor/keyboard`)"
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
@@ -212,19 +212,19 @@ EXTERNAL SOURCES:
   CapacitorCordova:
     :path: "../../node_modules/@capacitor/ios"
   CapacitorFirebaseAnalytics:
-    :path: "../../../../capawesome-team/capacitor-firebase/packages/analytics"
+    :path: "../../node_modules/@capacitor-firebase/analytics"
   CapacitorFirebaseApp:
-    :path: "../../../../capawesome-team/capacitor-firebase/packages/app"
+    :path: "../../node_modules/@capacitor-firebase/app"
   CapacitorFirebaseAppCheck:
-    :path: "../../../../capawesome-team/capacitor-firebase/packages/app-check"
+    :path: "../../node_modules/@capacitor-firebase/app-check"
   CapacitorFirebaseCrashlytics:
-    :path: "../../../../capawesome-team/capacitor-firebase/packages/crashlytics"
+    :path: "../../node_modules/@capacitor-firebase/crashlytics"
   CapacitorFirebaseMessaging:
-    :path: "../../../../capawesome-team/capacitor-firebase/packages/messaging"
+    :path: "../../node_modules/@capacitor-firebase/messaging"
   CapacitorFirebasePerformance:
-    :path: "../../../../capawesome-team/capacitor-firebase/packages/performance"
+    :path: "../../node_modules/@capacitor-firebase/performance"
   CapacitorFirebaseRemoteConfig:
-    :path: "../../../../capawesome-team/capacitor-firebase/packages/remote-config"
+    :path: "../../node_modules/@capacitor-firebase/remote-config"
   CapacitorHaptics:
     :path: "../../node_modules/@capacitor/haptics"
   CapacitorKeyboard:
@@ -236,13 +236,13 @@ SPEC CHECKSUMS:
   Capacitor: f3abcb0ad3731b3dbe06e4172cc3670aa653a4a1
   CapacitorApp: 9bbb287cd157e0e644f8bd6b0e25874eb662095e
   CapacitorCordova: 9e13faa4d3efe6e67f38473c154a4a65811faac7
-  CapacitorFirebaseAnalytics: 4d456dcec27defd8d17fa790d8c9aaef435c84ad
-  CapacitorFirebaseApp: f1e66ff9d04f4fb80a144bb36fe15c9182139fa8
-  CapacitorFirebaseAppCheck: 23888c9cd9c72991772f8c6a2260476f02f52761
-  CapacitorFirebaseCrashlytics: 966ff13588f78c2f48ff51a36928dc26595e7c9e
-  CapacitorFirebaseMessaging: 120154a7e559f4b8b90433dee18d99db8b20e372
-  CapacitorFirebasePerformance: 168564df054ba80b57430fd734b7d08fa4be53fb
-  CapacitorFirebaseRemoteConfig: b5440ca0a5e35cf36bd1e700db75a7d37aaf90c4
+  CapacitorFirebaseAnalytics: c8063ee259a767c9081310351b121b39dcc13f27
+  CapacitorFirebaseApp: 4b052e5901138f1bd06a3f41f4456eac225a3ea8
+  CapacitorFirebaseAppCheck: 189d196b163b7468afee3a4670c537290dbefe79
+  CapacitorFirebaseCrashlytics: e65645d9aa1f55787479e7e77c3373583676562a
+  CapacitorFirebaseMessaging: 0116b1bff0352f08e2efa66cc0484fae95b7b35c
+  CapacitorFirebasePerformance: 087ef5d7270a3b988baf0f824c44bd5a9076bdaf
+  CapacitorFirebaseRemoteConfig: c46562b575fb43a5de4765d2b84fff08242aec0c
   CapacitorHaptics: f4a2364168f6eae1ab76989355cb7ad8db386c18
   CapacitorKeyboard: 68e28b61f8a23bf37ec0fad9a0849b1272218bba
   CapacitorStatusBar: 5ad9e785f46259df52f96cc4efbe2907ae43b019
@@ -259,12 +259,12 @@ SPEC CHECKSUMS:
   FirebaseRemoteConfig: ffd8c40611809c92526783da146be93a15cc3f00
   FirebaseSessions: 44a6782502eb279a214d4adca20891353278760c
   GoogleAppMeasurement: 0ba93018e916f7badf915c2337d43cc1fa96b3f9
-  GoogleDataTransport: 8378d1fa8ac49753ea6ce70d65a7cb70ce5f66e6
+  GoogleDataTransport: f0308f5905a745f94fb91fea9c6cbaf3831cb1bd
   GoogleUtilities: 9aa0ad5a7bc171f8bae016300bfcfa3fb8425749
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   PromisesSwift: cf9eb58666a43bbe007302226e510b16c1e10959
 
-PODFILE CHECKSUM: 7a5480dd3b1eb6979732d299b81ebd86a36c7c5e
+PODFILE CHECKSUM: a94e791ae76a992bcc12bb728ec366b503f4c42b
 
 COCOAPODS: 1.12.1

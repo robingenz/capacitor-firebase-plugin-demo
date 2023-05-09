@@ -11,13 +11,13 @@ install! 'cocoapods', :disable_input_output_paths => true
 def capacitor_pods
   pod 'Capacitor', :path => '../../node_modules/@capacitor/ios'
   pod 'CapacitorCordova', :path => '../../node_modules/@capacitor/ios'
-  pod 'CapacitorFirebaseAnalytics', :path => '../../../../capawesome-team/capacitor-firebase/packages/analytics'
-  pod 'CapacitorFirebaseApp', :path => '../../../../capawesome-team/capacitor-firebase/packages/app'
-  pod 'CapacitorFirebaseAppCheck', :path => '../../../../capawesome-team/capacitor-firebase/packages/app-check'
-  pod 'CapacitorFirebaseCrashlytics', :path => '../../../../capawesome-team/capacitor-firebase/packages/crashlytics'
-  pod 'CapacitorFirebaseMessaging', :path => '../../../../capawesome-team/capacitor-firebase/packages/messaging'
-  pod 'CapacitorFirebasePerformance', :path => '../../../../capawesome-team/capacitor-firebase/packages/performance'
-  pod 'CapacitorFirebaseRemoteConfig', :path => '../../../../capawesome-team/capacitor-firebase/packages/remote-config'
+  pod 'CapacitorFirebaseAnalytics', :path => '../../node_modules/@capacitor-firebase/analytics'
+  pod 'CapacitorFirebaseApp', :path => '../../node_modules/@capacitor-firebase/app'
+  pod 'CapacitorFirebaseAppCheck', :path => '../../node_modules/@capacitor-firebase/app-check'
+  pod 'CapacitorFirebaseCrashlytics', :path => '../../node_modules/@capacitor-firebase/crashlytics'
+  pod 'CapacitorFirebaseMessaging', :path => '../../node_modules/@capacitor-firebase/messaging'
+  pod 'CapacitorFirebasePerformance', :path => '../../node_modules/@capacitor-firebase/performance'
+  pod 'CapacitorFirebaseRemoteConfig', :path => '../../node_modules/@capacitor-firebase/remote-config'
   pod 'CapacitorApp', :path => '../../node_modules/@capacitor/app'
   pod 'CapacitorHaptics', :path => '../../node_modules/@capacitor/haptics'
   pod 'CapacitorKeyboard', :path => '../../node_modules/@capacitor/keyboard'
@@ -27,7 +27,7 @@ end
 target 'App' do
   capacitor_pods
   # Add your Pods here
-  pod 'CapacitorFirebaseAnalytics/Analytics', :path => '../../../../capawesome-team/capacitor-firebase/packages/analytics'
+  pod 'CapacitorFirebaseAnalytics/Analytics', :path => '../../node_modules/@capacitor-firebase/analytics'
 end
 
 
