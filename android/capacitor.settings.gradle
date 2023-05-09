@@ -3,25 +3,25 @@ include ':capacitor-android'
 project(':capacitor-android').projectDir = new File('../node_modules/@capacitor/android/capacitor')
 
 include ':capacitor-firebase-analytics'
-project(':capacitor-firebase-analytics').projectDir = new File('../node_modules/@capacitor-firebase/analytics/android')
+project(':capacitor-firebase-analytics').projectDir = new File('../../../capawesome-team/capacitor-firebase/packages/analytics/android')
 
 include ':capacitor-firebase-app'
-project(':capacitor-firebase-app').projectDir = new File('../node_modules/@capacitor-firebase/app/android')
+project(':capacitor-firebase-app').projectDir = new File('../../../capawesome-team/capacitor-firebase/packages/app/android')
 
 include ':capacitor-firebase-app-check'
-project(':capacitor-firebase-app-check').projectDir = new File('../node_modules/@capacitor-firebase/app-check/android')
+project(':capacitor-firebase-app-check').projectDir = new File('../../../capawesome-team/capacitor-firebase/packages/app-check/android')
 
 include ':capacitor-firebase-crashlytics'
-project(':capacitor-firebase-crashlytics').projectDir = new File('../node_modules/@capacitor-firebase/crashlytics/android')
+project(':capacitor-firebase-crashlytics').projectDir = new File('../../../capawesome-team/capacitor-firebase/packages/crashlytics/android')
 
 include ':capacitor-firebase-messaging'
-project(':capacitor-firebase-messaging').projectDir = new File('../node_modules/@capacitor-firebase/messaging/android')
+project(':capacitor-firebase-messaging').projectDir = new File('../../../capawesome-team/capacitor-firebase/packages/messaging/android')
 
 include ':capacitor-firebase-performance'
-project(':capacitor-firebase-performance').projectDir = new File('../node_modules/@capacitor-firebase/performance/android')
+project(':capacitor-firebase-performance').projectDir = new File('../../../capawesome-team/capacitor-firebase/packages/performance/android')
 
 include ':capacitor-firebase-remote-config'
-project(':capacitor-firebase-remote-config').projectDir = new File('../node_modules/@capacitor-firebase/remote-config/android')
+project(':capacitor-firebase-remote-config').projectDir = new File('../../../capawesome-team/capacitor-firebase/packages/remote-config/android')
 
 include ':capacitor-app'
 project(':capacitor-app').projectDir = new File('../node_modules/@capacitor/app/android')
