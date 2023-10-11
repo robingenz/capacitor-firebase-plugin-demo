@@ -1,40 +1,40 @@
 PODS:
-  - Capacitor (5.0.0-rc.1):
+  - Capacitor (5.4.2):
     - CapacitorCordova
-  - CapacitorApp (5.0.0-beta.1):
+  - CapacitorApp (5.0.6):
     - Capacitor
-  - CapacitorCordova (5.0.0-rc.1)
-  - CapacitorFirebaseAnalytics (5.0.0-dev.351d12d.1683650804):
+  - CapacitorCordova (5.4.2)
+  - CapacitorFirebaseAnalytics (5.1.0):
     - Capacitor
-    - CapacitorFirebaseAnalytics/Lite (= 5.0.0-dev.351d12d.1683650804)
-  - CapacitorFirebaseAnalytics/Analytics (5.0.0-dev.351d12d.1683650804):
+    - CapacitorFirebaseAnalytics/Lite (= 5.1.0)
+  - CapacitorFirebaseAnalytics/Analytics (5.1.0):
     - Capacitor
     - FirebaseAnalytics (= 10.8.0)
-  - CapacitorFirebaseAnalytics/Lite (5.0.0-dev.351d12d.1683650804):
+  - CapacitorFirebaseAnalytics/Lite (5.1.0):
     - Capacitor
-  - CapacitorFirebaseApp (5.0.0):
+  - CapacitorFirebaseApp (5.1.0):
     - Capacitor
     - FirebaseCore (= 10.8.0)
-  - CapacitorFirebaseAppCheck (5.0.0):
+  - CapacitorFirebaseAppCheck (5.1.0):
     - Capacitor
     - FirebaseAppCheck (= 10.8.0)
-  - CapacitorFirebaseCrashlytics (5.0.0):
+  - CapacitorFirebaseCrashlytics (5.1.0):
     - Capacitor
     - FirebaseCrashlytics (= 10.8.0)
-  - CapacitorFirebaseMessaging (5.0.0):
+  - CapacitorFirebaseMessaging (5.1.0):
     - Capacitor
     - FirebaseMessaging (= 10.8.0)
-  - CapacitorFirebasePerformance (5.0.0):
+  - CapacitorFirebasePerformance (5.1.0):
     - Capacitor
     - FirebasePerformance (= 10.8.0)
-  - CapacitorFirebaseRemoteConfig (5.0.0):
+  - CapacitorFirebaseRemoteConfig (5.1.0):
     - Capacitor
     - FirebaseRemoteConfig (= 10.8.0)
-  - CapacitorHaptics (5.0.0-beta.1):
+  - CapacitorHaptics (5.0.6):
     - Capacitor
-  - CapacitorKeyboard (5.0.0-beta.1):
+  - CapacitorKeyboard (5.0.6):
     - Capacitor
-  - CapacitorStatusBar (5.0.0-beta.1):
+  - CapacitorStatusBar (5.0.6):
     - Capacitor
   - FirebaseABTesting (10.9.0):
     - FirebaseCore (~> 10.0)
@@ -233,19 +233,19 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/status-bar"
 
 SPEC CHECKSUMS:
-  Capacitor: f3abcb0ad3731b3dbe06e4172cc3670aa653a4a1
-  CapacitorApp: 9bbb287cd157e0e644f8bd6b0e25874eb662095e
-  CapacitorCordova: 9e13faa4d3efe6e67f38473c154a4a65811faac7
-  CapacitorFirebaseAnalytics: c8063ee259a767c9081310351b121b39dcc13f27
-  CapacitorFirebaseApp: 4b052e5901138f1bd06a3f41f4456eac225a3ea8
-  CapacitorFirebaseAppCheck: 189d196b163b7468afee3a4670c537290dbefe79
-  CapacitorFirebaseCrashlytics: e65645d9aa1f55787479e7e77c3373583676562a
-  CapacitorFirebaseMessaging: 0116b1bff0352f08e2efa66cc0484fae95b7b35c
-  CapacitorFirebasePerformance: 087ef5d7270a3b988baf0f824c44bd5a9076bdaf
-  CapacitorFirebaseRemoteConfig: c46562b575fb43a5de4765d2b84fff08242aec0c
-  CapacitorHaptics: f4a2364168f6eae1ab76989355cb7ad8db386c18
-  CapacitorKeyboard: 68e28b61f8a23bf37ec0fad9a0849b1272218bba
-  CapacitorStatusBar: 5ad9e785f46259df52f96cc4efbe2907ae43b019
+  Capacitor: 8a9db42d105f55843cd8ed2a3cb54e2b78e7f102
+  CapacitorApp: 024e1b1bea5f883d79f6330d309bc441c88ad04a
+  CapacitorCordova: cfcc06b698481da655415985eeb2b8da363f8451
+  CapacitorFirebaseAnalytics: 8e42f3392e19f4331e21be373f4520412487bb69
+  CapacitorFirebaseApp: 472cf2609c0dd2219cbdc124962d7f939d038873
+  CapacitorFirebaseAppCheck: f3ee09932a833c0d2a5e7cf2aa2bbdaaefecf824
+  CapacitorFirebaseCrashlytics: 65b525728268133c68f49567f95eb94320f32140
+  CapacitorFirebaseMessaging: 6e50f2fbddc6056ba864015e0b46a5f3c3477d3d
+  CapacitorFirebasePerformance: 6467c91927b31770324a8e80352ff42745b37d80
+  CapacitorFirebaseRemoteConfig: 6fee43a7daa634432ab27e5aced1d69881fbe44a
+  CapacitorHaptics: 1fffc1217c7e64a472d7845be50fb0c2f7d4204c
+  CapacitorKeyboard: b978154b024a5f65e044908e37d15b7de58b9d12
+  CapacitorStatusBar: 565c0a1ebd79bb40d797606a8992b4a105885309
   FirebaseABTesting: 005b70969e2817e2a1e631e8dba29134a04c0622
   FirebaseAnalytics: e1fc758bd5d71823bba970c076abee4b2450a5f4
   FirebaseAppCheck: 8bde2c5f393518ab98290151188bf196b4bab91e
