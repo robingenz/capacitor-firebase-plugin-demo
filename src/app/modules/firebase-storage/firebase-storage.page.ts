@@ -1,10 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
 import { FirebaseAnalytics } from '@capacitor-firebase/analytics';
-import {
-  FirebaseStorage,
-  StorageReference,
-  UploadFileState,
-} from '@capacitor-firebase/storage';
+import { FirebaseStorage, StorageReference } from '@capacitor-firebase/storage';
 import { Directory, Filesystem } from '@capacitor/filesystem';
 import { FileOpener } from '@capawesome-team/capacitor-file-opener';
 import { FilePicker } from '@capawesome/capacitor-file-picker';
@@ -22,7 +18,7 @@ export class FirebaseStoragePage implements OnInit {
   private readonly githubUrl =
     'https://github.com/robingenz/capacitor-firebase';
 
-  constructor() {}
+  constructor(private readonly ngZone: NgZone) {}
 
   public ngOnInit(): void {
     void this.loadFiles();
@@ -54,13 +50,15 @@ export class FirebaseStoragePage implements OnInit {
         blob: file.blob,
       },
       (event, error) => {
-        console.log('Progress: ', event?.progress + '%');
-        if (event?.state === UploadFileState.Success) {
-          void this.loadFiles();
-        }
-        if (error) {
-          throw error;
-        }
+        this.ngZone.run(() => {
+          console.log('Progress: ', event?.progress + '%');
+          if (event?.completed) {
+            void this.loadFiles();
+          }
+          if (error) {
+            throw error;
+          }
+        });
       }
     );
   }
@@ -69,6 +67,19 @@ export class FirebaseStoragePage implements OnInit {
     const { downloadUrl } = await FirebaseStorage.getDownloadUrl({
       path: item.path,
     });
+    const metadata = await FirebaseStorage.getMetadata({
+      path: item.path,
+    });
+    console.log({ metadata });
+    try {
+      await Filesystem.mkdir({
+        path: this.path,
+        directory: Directory.Cache,
+        recursive: true,
+      });
+    } catch (error) {
+      // ignore
+    }
     const { path, blob } = await Filesystem.downloadFile({
       url: downloadUrl,
       path: [this.path, item.name].join('/'),
