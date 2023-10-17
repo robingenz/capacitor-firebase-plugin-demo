@@ -62,6 +62,13 @@ const routes: Routes = [
       ).then((m) => m.FirebaseRemoteConfigPageModule),
   },
   {
+    path: 'firebase-storage',
+    loadChildren: () =>
+      import('./modules/firebase-storage/firebase-storage.module').then(
+        (m) => m.FirebaseStoragePageModule
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },

@@ -36,6 +36,10 @@ export class HomePage {
       name: 'Firebase Remote Config',
       url: '/firebase-remote-config',
     },
+    {
+      name: 'Firebase Storage',
+      url: '/firebase-storage',
+    },
   ];
 
   constructor() {}
