@@ -32,7 +32,7 @@ PODS:
   - CapacitorFirebaseRemoteConfig (5.1.0):
     - Capacitor
     - FirebaseRemoteConfig (= 10.8.0)
-  - CapacitorFirebaseStorage (5.1.0):
+  - CapacitorFirebaseStorage (5.1.0-dev.bf4bd39.1697375834):
     - Capacitor
     - FirebaseStorage (= 10.8.0)
   - CapacitorHaptics (5.0.6):
@@ -198,7 +198,7 @@ DEPENDENCIES:
   - "CapacitorFirebaseMessaging (from `../../node_modules/@capacitor-firebase/messaging`)"
   - "CapacitorFirebasePerformance (from `../../node_modules/@capacitor-firebase/performance`)"
   - "CapacitorFirebaseRemoteConfig (from `../../node_modules/@capacitor-firebase/remote-config`)"
-  - CapacitorFirebaseStorage (from `../../../../capawesome-team/capacitor-firebase/packages/storage`)
+  - "CapacitorFirebaseStorage (from `../../node_modules/@capacitor-firebase/storage`)"
   - "CapacitorHaptics (from `../../node_modules/@capacitor/haptics`)"
   - "CapacitorKeyboard (from `../../node_modules/@capacitor/keyboard`)"
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
@@ -254,7 +254,7 @@ EXTERNAL SOURCES:
   CapacitorFirebaseRemoteConfig:
     :path: "../../node_modules/@capacitor-firebase/remote-config"
   CapacitorFirebaseStorage:
-    :path: "../../../../capawesome-team/capacitor-firebase/packages/storage"
+    :path: "../../node_modules/@capacitor-firebase/storage"
   CapacitorHaptics:
     :path: "../../node_modules/@capacitor/haptics"
   CapacitorKeyboard:
@@ -278,7 +278,7 @@ SPEC CHECKSUMS:
   CapacitorFirebaseMessaging: 6e50f2fbddc6056ba864015e0b46a5f3c3477d3d
   CapacitorFirebasePerformance: 6467c91927b31770324a8e80352ff42745b37d80
   CapacitorFirebaseRemoteConfig: 6fee43a7daa634432ab27e5aced1d69881fbe44a
-  CapacitorFirebaseStorage: 9b78f2445b16d0398a999196ac00a6e8d2ed6337
+  CapacitorFirebaseStorage: ffc90cc193fad79818b3503e13aa4d98f310f8ae
   CapacitorHaptics: 1fffc1217c7e64a472d7845be50fb0c2f7d4204c
   CapacitorKeyboard: b978154b024a5f65e044908e37d15b7de58b9d12
   CapacitorStatusBar: 565c0a1ebd79bb40d797606a8992b4a105885309
@@ -307,6 +307,6 @@ SPEC CHECKSUMS:
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   PromisesSwift: cf9eb58666a43bbe007302226e510b16c1e10959
 
-PODFILE CHECKSUM: b67f00467c6077195a80d42fa692ef3827c9ef77
+PODFILE CHECKSUM: 52ebf09e1b0491a7533b6ee64ec9ff4aebd52d33
 
 COCOAPODS: 1.12.1

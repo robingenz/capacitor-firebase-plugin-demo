@@ -24,7 +24,7 @@ include ':capacitor-firebase-remote-config'
 project(':capacitor-firebase-remote-config').projectDir = new File('../node_modules/@capacitor-firebase/remote-config/android')
 
 include ':capacitor-firebase-storage'
-project(':capacitor-firebase-storage').projectDir = new File('../../../capawesome-team/capacitor-firebase/packages/storage/android')
+project(':capacitor-firebase-storage').projectDir = new File('../node_modules/@capacitor-firebase/storage/android')
 
 include ':capacitor-app'
 project(':capacitor-app').projectDir = new File('../node_modules/@capacitor/app/android')
