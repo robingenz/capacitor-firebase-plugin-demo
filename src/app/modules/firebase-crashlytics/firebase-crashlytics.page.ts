@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FirebaseCrashlytics } from '@capacitor-firebase/crashlytics';
 import { FirebaseAnalytics } from '@capacitor-firebase/analytics';
+import { FirebaseCrashlytics } from '@capacitor-firebase/crashlytics';
 
 @Component({
   selector: 'app-firebase-crashlytics',
@@ -8,6 +8,8 @@ import { FirebaseAnalytics } from '@capacitor-firebase/analytics';
   styleUrls: ['./firebase-crashlytics.page.scss'],
 })
 export class FirebaseCrashlyticsPage {
+  public enabled: boolean | undefined;
+
   private readonly githubUrl =
     'https://github.com/robingenz/capacitor-firebase';
 
@@ -21,6 +23,19 @@ export class FirebaseCrashlyticsPage {
 
   public openOnGithub(): void {
     window.open(this.githubUrl, '_blank');
+  }
+
+  public async enable(): Promise<void> {
+    await FirebaseCrashlytics.setEnabled({ enabled: true });
+  }
+
+  public async disable(): Promise<void> {
+    await FirebaseCrashlytics.setEnabled({ enabled: false });
+  }
+
+  public async isEnabled(): Promise<void> {
+    const result = await FirebaseCrashlytics.isEnabled();
+    this.enabled = result.enabled;
   }
 
   public async crash(): Promise<void> {
