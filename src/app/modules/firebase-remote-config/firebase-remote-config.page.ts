@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FirebaseAnalytics } from '@capacitor-firebase/analytics';
 import {
   FirebaseRemoteConfig,
@@ -10,7 +10,7 @@ import {
   templateUrl: './firebase-remote-config.page.html',
   styleUrls: ['./firebase-remote-config.page.scss'],
 })
-export class FirebaseRemoteConfigPage {
+export class FirebaseRemoteConfigPage implements OnInit {
   public key = '';
   public value = '';
   public source = '';
@@ -20,7 +20,15 @@ export class FirebaseRemoteConfigPage {
 
   constructor() {}
 
-  ionViewDidEnter() {
+  public ngOnInit() {
+    void FirebaseRemoteConfig.removeAllListeners().then(() => {
+      void FirebaseRemoteConfig.addConfigUpdateListener((event) => {
+        console.log({ event });
+      });
+    });
+  }
+
+  public ionViewDidEnter() {
     FirebaseAnalytics.setCurrentScreen({
       screenName: 'FirebaseRemoteConfigPage',
     });
