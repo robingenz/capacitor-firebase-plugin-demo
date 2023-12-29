@@ -139,7 +139,7 @@ export class FirebaseMessagingPage {
   }
 
   public async removeDeliveredNotifications(
-    notification: Notification
+    notification: Notification,
   ): Promise<void> {
     await FirebaseMessaging.removeDeliveredNotifications({
       notifications: [notification],

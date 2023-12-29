@@ -59,7 +59,7 @@ export class FirebaseStoragePage implements OnInit {
             throw error;
           }
         });
-      }
+      },
     );
   }
 

@@ -69,7 +69,7 @@ export class FirebaseRemoteConfigPage implements OnInit {
   }
 
   private mapGetValueSourceToString(
-    source: GetValueSource | undefined
+    source: GetValueSource | undefined,
   ): string {
     switch (source) {
       case GetValueSource.Default:

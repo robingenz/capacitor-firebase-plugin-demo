@@ -16,42 +16,42 @@ const routes: Routes = [
     path: 'firebase-app',
     loadChildren: () =>
       import('./modules/firebase-app/firebase-app.module').then(
-        (m) => m.FirebaseAppPageModule
+        (m) => m.FirebaseAppPageModule,
       ),
   },
   {
     path: 'firebase-app-check',
     loadChildren: () =>
       import('./modules/firebase-app-check/firebase-app-check.module').then(
-        (m) => m.FirebaseAppCheckPageModule
+        (m) => m.FirebaseAppCheckPageModule,
       ),
   },
   {
     path: 'firebase-performance',
     loadChildren: () =>
       import('./modules/firebase-performance/firebase-performance.module').then(
-        (m) => m.FirebasePerformancePageModule
+        (m) => m.FirebasePerformancePageModule,
       ),
   },
   {
     path: 'firebase-crashlytics',
     loadChildren: () =>
       import('./modules/firebase-crashlytics/firebase-crashlytics.module').then(
-        (m) => m.FirebaseCrashlyticsPageModule
+        (m) => m.FirebaseCrashlyticsPageModule,
       ),
   },
   {
     path: 'firebase-analytics',
     loadChildren: () =>
       import('./modules/firebase-analytics/firebase-analytics.module').then(
-        (m) => m.FirebaseAnalyticsPageModule
+        (m) => m.FirebaseAnalyticsPageModule,
       ),
   },
   {
     path: 'firebase-messaging',
     loadChildren: () =>
       import('./modules/firebase-messaging/firebase-messaging.module').then(
-        (m) => m.FirebaseMessagingPageModule
+        (m) => m.FirebaseMessagingPageModule,
       ),
   },
   {
@@ -65,7 +65,7 @@ const routes: Routes = [
     path: 'firebase-storage',
     loadChildren: () =>
       import('./modules/firebase-storage/firebase-storage.module').then(
-        (m) => m.FirebaseStoragePageModule
+        (m) => m.FirebaseStoragePageModule,
       ),
   },
   {
