@@ -22,37 +22,39 @@
           (click)="openOnGithub()"
           class="ion-float-right"
           >GitHub</ion-button
-        >
-      </ion-col>
-    </ion-row>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Demo</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-list>
-        <ion-item-sliding *ngFor="let item of items; let last = last">
-          <ion-item
-            button
-            (click)="downloadAndOpenFile(item)"
-            [lines]="last ? 'none' : 'inset'"
           >
-            <ion-label>{{ item.name }}</ion-label>
-          </ion-item>
-          <ion-item-options>
-            <ion-item-option color="danger" (click)="deleteFile(item)">
-              <ion-icon slot="start" name="trash"></ion-icon
-              >Delete</ion-item-option
-            >
-          </ion-item-options>
-        </ion-item-sliding>
-      </ion-list>
-    </ion-card-content>
-  </ion-card>
-  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
-    <ion-fab-button (click)="pickAndUploadFile()">
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-</ion-content>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Demo</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          @for (item of items; track item; let last = $last) {
+            <ion-item-sliding>
+              <ion-item
+                button
+                (click)="downloadAndOpenFile(item)"
+                [lines]="last ? 'none' : 'inset'"
+                >
+                <ion-label>{{ item.name }}</ion-label>
+              </ion-item>
+              <ion-item-options>
+                <ion-item-option color="danger" (click)="deleteFile(item)">
+                  <ion-icon slot="start" name="trash"></ion-icon
+                    >Delete</ion-item-option
+                    >
+                  </ion-item-options>
+                </ion-item-sliding>
+              }
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+        <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+          <ion-fab-button (click)="pickAndUploadFile()">
+            <ion-icon name="add"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+      </ion-content>
