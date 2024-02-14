@@ -5,15 +5,14 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyAdSJa6qYSkHVQIkPGkl0OtDu8w2JbTwe8',
-    authDomain: 'capacitor-firebase-plugin-demo.firebaseapp.com',
-    projectId: 'capacitor-firebase-plugin-demo',
-    storageBucket: 'capacitor-firebase-plugin-demo.appspot.com',
-    messagingSenderId: '20043654228',
-    appId: '1:20043654228:web:98b28eaef48dad770939c1',
-    measurementId: 'G-K2DPKN6HD5',
+    apiKey: 'AIzaSyC4E_CvlcVlxq4wA1TY-wmuv7C9vHLbWvM',
+    authDomain: 'capacitor-firebase-f723a.firebaseapp.com',
+    projectId: 'capacitor-firebase-f723a',
+    storageBucket: 'capacitor-firebase-f723a.appspot.com',
+    messagingSenderId: '85678314176',
+    appId: '1:85678314176:web:6ff7816eed68adec685325',
     vapidKey:
-      'BD4AxTT8v4VyAgGbCM8XZcs71QsEiQtwLvqg269NREhfiXAFIqfm_hdJrPot7kqivnT_XhnoKZ2_QfNUhvVJyYI',
+      'BPHoIMPtq4-SFHOGopHNHf1zSCrc-58J_BNjzaYdWzMqnEd-MKvun0OARZE6sYvM2WyWzrp8HSluzchEtNTzbpM',
   },
 };
 
