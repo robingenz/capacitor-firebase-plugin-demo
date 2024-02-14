@@ -9,8 +9,8 @@ describe('FirebaseFirestorePage', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ FirebaseFirestorePage ],
-      imports: [IonicModule.forRoot()]
+      declarations: [FirebaseFirestorePage],
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(FirebaseFirestorePage);
