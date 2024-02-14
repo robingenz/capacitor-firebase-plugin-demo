@@ -21,8 +21,16 @@ export class HomePage {
       url: '/firebase-app-check',
     },
     {
+      name: 'Firebase Cloud Firestore',
+      url: '/firebase-firestore',
+    },
+    {
       name: 'Firebase Cloud Messaging',
       url: '/firebase-messaging',
+    },
+    {
+      name: 'Firebase Cloud Storage',
+      url: '/firebase-storage',
     },
     {
       name: 'Firebase Crashlytics',
@@ -35,10 +43,6 @@ export class HomePage {
     {
       name: 'Firebase Remote Config',
       url: '/firebase-remote-config',
-    },
-    {
-      name: 'Firebase Storage',
-      url: '/firebase-storage',
     },
   ];
 

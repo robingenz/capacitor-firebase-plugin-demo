@@ -16,6 +16,10 @@
 		"classpath": "io.capawesome.capacitorjs.plugins.firebase.crashlytics.FirebaseCrashlyticsPlugin"
 	},
 	{
+		"pkg": "@capacitor-firebase/firestore",
+		"classpath": "io.capawesome.capacitorjs.plugins.firebase.firestore.FirebaseFirestorePlugin"
+	},
+	{
 		"pkg": "@capacitor-firebase/messaging",
 		"classpath": "io.capawesome.capacitorjs.plugins.firebase.messaging.FirebaseMessagingPlugin"
 	},

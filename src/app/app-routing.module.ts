@@ -69,6 +69,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'firebase-firestore',
+    loadChildren: () =>
+      import('./modules/firebase-firestore/firebase-firestore.module').then(
+        (m) => m.FirebaseFirestorePageModule,
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },

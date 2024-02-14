@@ -25,6 +25,7 @@
     "@capacitor-firebase/app": "5.4.0",
     "@capacitor-firebase/app-check": "5.4.0",
     "@capacitor-firebase/crashlytics": "5.4.0",
+    "@capacitor-firebase/firestore": "5.4.0",
     "@capacitor-firebase/messaging": "5.4.0",
     "@capacitor-firebase/performance": "5.4.0",
     "@capacitor-firebase/remote-config": "5.4.0",
