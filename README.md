@@ -45,8 +45,8 @@ Install all dependencies:
 npm i
 ```
 
-Add a Firebase configuration file ([Android](https://firebase.google.com/docs/android/setup#add-config-file) / [iOS](https://firebase.google.com/docs/ios/setup#add-config-file)).
-On the Web, you need to update the `src/environment/environment.ts` and `src/environment/environment.prod.ts` files with your config values from the Firebase Console.
+On **Android** and **iOS**, add a Firebase configuration file ([Android](https://github.com/capawesome-team/capacitor-firebase/blob/main/docs/firebase-setup.md#add-a-firebase-configuration-file) / [iOS](https://github.com/capawesome-team/capacitor-firebase/blob/main/docs/firebase-setup.md#add-a-firebase-configuration-file-1)).  
+On the **Web**, you need to update the `src/environment/environment.ts` and `src/environment/environment.prod.ts` files with your config values from the Firebase Console.
 
 Prepare and launch the Android app:
 
