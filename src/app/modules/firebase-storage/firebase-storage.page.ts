@@ -36,7 +36,7 @@ export class FirebaseStoragePage implements OnInit {
 
   public async pickAndUploadFile(): Promise<void> {
     const { files } = await FilePicker.pickImages({
-      multiple: false,
+      limit: 1,
     });
     const file = files[0];
     if (!file) {

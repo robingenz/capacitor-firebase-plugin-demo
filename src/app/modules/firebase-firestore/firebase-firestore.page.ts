@@ -40,7 +40,7 @@ export class FirebaseFirestorePage {
         map: {
           key: 'value',
         },
-        nan: NaN,
+        // nan: NaN, // Not supported (see https://github.com/capawesome-team/capacitor-firebase/issues/556)
         null: null,
         reference: `samples/${
           Capacitor.getPlatform() === 'ios' ? 'android' : 'ios'
