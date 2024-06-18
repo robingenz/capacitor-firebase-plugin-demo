@@ -57,6 +57,27 @@ export class FirebaseFirestorePage {
     console.log({ result });
   }
 
+  public async writeBatch(): Promise<void> {
+    await FirebaseFirestore.writeBatch({
+      operations: [
+        {
+          type: 'update',
+          reference: `samples/${Capacitor.getPlatform()}`,
+          data: {
+            date: new Date(),
+          },
+        },
+        {
+          type: 'set',
+          reference: `samples/${Capacitor.getPlatform()}-2`,
+          data: {
+            integer: this.getRandomInt(100),
+          },
+        },
+      ],
+    });
+  }
+
   private getRandomInt(max: number): number {
     return Math.floor(Math.random() * max);
   }
