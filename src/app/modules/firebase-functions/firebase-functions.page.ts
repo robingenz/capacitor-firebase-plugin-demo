@@ -29,4 +29,11 @@ export class FirebaseFunctionsPage {
     });
     console.log({ result });
   }
+
+  public async callByUrl(): Promise<void> {
+    const result = await FirebaseFunctions.callByUrl({
+      url: '',
+    });
+    console.log({ result });
+  }
 }
