@@ -26,7 +26,7 @@
     "@capacitor-firebase/app-check": "6.0.0",
     "@capacitor-firebase/crashlytics": "6.0.0",
     "@capacitor-firebase/firestore": "6.0.0-dev.909ed63.1718638975",
-    "@capacitor-firebase/functions": "../../capawesome-team/capacitor-firebase/packages/functions",
+    "@capacitor-firebase/functions": "6.0.0-dev.b96fa6c.1718781196",
     "@capacitor-firebase/messaging": "6.0.0",
     "@capacitor-firebase/performance": "6.0.0",
     "@capacitor-firebase/remote-config": "6.0.0",

@@ -983,7 +983,7 @@ PODS:
   - CapacitorFirebaseFirestore (6.0.0-dev.909ed63.1718638975):
     - Capacitor
     - FirebaseFirestore (~> 10.25)
-  - CapacitorFirebaseFunctions (6.0.0):
+  - CapacitorFirebaseFunctions (6.0.0-dev.b96fa6c.1718781196):
     - Capacitor
     - FirebaseFunctions (~> 10.25)
   - CapacitorFirebaseMessaging (6.0.0):
@@ -1288,7 +1288,7 @@ DEPENDENCIES:
   - "CapacitorFirebaseAppCheck (from `../../node_modules/@capacitor-firebase/app-check`)"
   - "CapacitorFirebaseCrashlytics (from `../../node_modules/@capacitor-firebase/crashlytics`)"
   - "CapacitorFirebaseFirestore (from `../../node_modules/@capacitor-firebase/firestore`)"
-  - CapacitorFirebaseFunctions (from `../../../../capawesome-team/capacitor-firebase/packages/functions`)
+  - "CapacitorFirebaseFunctions (from `../../node_modules/@capacitor-firebase/functions`)"
   - "CapacitorFirebaseMessaging (from `../../node_modules/@capacitor-firebase/messaging`)"
   - "CapacitorFirebasePerformance (from `../../node_modules/@capacitor-firebase/performance`)"
   - "CapacitorFirebaseRemoteConfig (from `../../node_modules/@capacitor-firebase/remote-config`)"
@@ -1356,7 +1356,7 @@ EXTERNAL SOURCES:
   CapacitorFirebaseFirestore:
     :path: "../../node_modules/@capacitor-firebase/firestore"
   CapacitorFirebaseFunctions:
-    :path: "../../../../capawesome-team/capacitor-firebase/packages/functions"
+    :path: "../../node_modules/@capacitor-firebase/functions"
   CapacitorFirebaseMessaging:
     :path: "../../node_modules/@capacitor-firebase/messaging"
   CapacitorFirebasePerformance:
@@ -1389,7 +1389,7 @@ SPEC CHECKSUMS:
   CapacitorFirebaseAppCheck: 2dd8f4e8fc3e152cdd0834a6bcb5a9cbbdf1939f
   CapacitorFirebaseCrashlytics: 7ac40f5422ab4186264cdfa08cfeb96ec4d692c3
   CapacitorFirebaseFirestore: b2b767f0df077ffc22aaf13cce1229121a9a6f0e
-  CapacitorFirebaseFunctions: 8e34488a55f769d3d891ae6bda0e964f8141a7fd
+  CapacitorFirebaseFunctions: cdb58d5265f77942db91a4a0fd7dd6292ea6b9ce
   CapacitorFirebaseMessaging: 449f81e1fffcee3f3934680200742d148b9f269e
   CapacitorFirebasePerformance: 6a2f31abc09559c7ea1c81aca2a95d302b86953e
   CapacitorFirebaseRemoteConfig: 59c086a129f693c9c00812d6d10ffcd8eedc2a3a
@@ -1431,6 +1431,6 @@ SPEC CHECKSUMS:
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
 
-PODFILE CHECKSUM: db15b34bd344550a75d45028f6d01dfa8a4e55ec
+PODFILE CHECKSUM: 6fa47644bec0d7b78031c8d69bc25b868940433b
 
 COCOAPODS: 1.15.2

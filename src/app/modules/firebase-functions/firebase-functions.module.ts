@@ -13,8 +13,8 @@ import { FirebaseFunctionsPage } from './firebase-functions.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    FirebaseFunctionsPageRoutingModule
+    FirebaseFunctionsPageRoutingModule,
   ],
-  declarations: [FirebaseFunctionsPage]
+  declarations: [FirebaseFunctionsPage],
 })
 export class FirebaseFunctionsPageModule {}

@@ -6,8 +6,8 @@ import { FirebaseFunctionsPage } from './firebase-functions.page';
 const routes: Routes = [
   {
     path: '',
-    component: FirebaseFunctionsPage
-  }
+    component: FirebaseFunctionsPage,
+  },
 ];
 
 @NgModule({
