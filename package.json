@@ -69,6 +69,7 @@
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jsdoc": "39.3.4",
     "eslint-plugin-prefer-arrow": "1.2.3",
+    "firebase-tools": "13.11.2",
     "jasmine-core": "4.4.0",
     "jasmine-spec-reporter": "7.0.0",
     "karma": "6.4.1",

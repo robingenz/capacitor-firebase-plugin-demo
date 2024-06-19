@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "capacitor-firebase-plugin-demo"
-  }
+    "default": "capacitor-firebase-f723a",
+    "capacitor-firebase-plugin-demo": "capacitor-firebase-f723a"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }

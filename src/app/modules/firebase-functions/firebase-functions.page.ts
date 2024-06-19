@@ -26,6 +26,9 @@ export class FirebaseFunctionsPage {
   public async callByName(): Promise<void> {
     const result = await FirebaseFunctions.callByName({
       name: 'helloWorld',
+      data: {
+        name: 'Test',
+      },
     });
     console.log({ result });
   }
