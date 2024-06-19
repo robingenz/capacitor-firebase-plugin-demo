@@ -76,6 +76,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'firebase-functions',
+    loadChildren: () =>
+      import('./modules/firebase-functions/firebase-functions.module').then(
+        (m) => m.FirebaseFunctionsPageModule,
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },

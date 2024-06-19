@@ -25,6 +25,10 @@ export class HomePage {
       url: '/firebase-firestore',
     },
     {
+      name: 'Firebase Cloud Functions',
+      url: '/firebase-functions',
+    },
+    {
       name: 'Firebase Cloud Messaging',
       url: '/firebase-messaging',
     },
