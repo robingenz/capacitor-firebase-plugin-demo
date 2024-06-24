@@ -983,6 +983,9 @@ PODS:
   - CapacitorFirebaseFirestore (6.0.0-dev.909ed63.1718638975):
     - Capacitor
     - FirebaseFirestore (~> 10.25)
+  - CapacitorFirebaseFunctions (6.0.0-dev.b96fa6c.1718781196):
+    - Capacitor
+    - FirebaseFunctions (~> 10.25)
   - CapacitorFirebaseMessaging (6.0.0):
     - Capacitor
     - FirebaseMessaging (~> 10.24)
@@ -1071,6 +1074,14 @@ PODS:
     - gRPC-Core (~> 1.62.0)
     - leveldb-library (~> 1.22)
     - nanopb (< 2.30911.0, >= 2.30908.0)
+  - FirebaseFunctions (10.28.0):
+    - FirebaseAppCheckInterop (~> 10.10)
+    - FirebaseAuthInterop (~> 10.25)
+    - FirebaseCore (~> 10.0)
+    - FirebaseCoreExtension (~> 10.0)
+    - FirebaseMessagingInterop (~> 10.0)
+    - FirebaseSharedSwift (~> 10.0)
+    - GTMSessionFetcher/Core (< 4.0, >= 2.1)
   - FirebaseInstallations (10.28.0):
     - FirebaseCore (~> 10.0)
     - GoogleUtilities/Environment (~> 7.8)
@@ -1085,6 +1096,7 @@ PODS:
     - GoogleUtilities/Reachability (~> 7.8)
     - GoogleUtilities/UserDefaults (~> 7.8)
     - nanopb (< 2.30911.0, >= 2.30908.0)
+  - FirebaseMessagingInterop (10.28.0)
   - FirebasePerformance (10.28.0):
     - FirebaseCore (~> 10.5)
     - FirebaseInstallations (~> 10.0)
@@ -1276,6 +1288,7 @@ DEPENDENCIES:
   - "CapacitorFirebaseAppCheck (from `../../node_modules/@capacitor-firebase/app-check`)"
   - "CapacitorFirebaseCrashlytics (from `../../node_modules/@capacitor-firebase/crashlytics`)"
   - "CapacitorFirebaseFirestore (from `../../node_modules/@capacitor-firebase/firestore`)"
+  - "CapacitorFirebaseFunctions (from `../../node_modules/@capacitor-firebase/functions`)"
   - "CapacitorFirebaseMessaging (from `../../node_modules/@capacitor-firebase/messaging`)"
   - "CapacitorFirebasePerformance (from `../../node_modules/@capacitor-firebase/performance`)"
   - "CapacitorFirebaseRemoteConfig (from `../../node_modules/@capacitor-firebase/remote-config`)"
@@ -1302,8 +1315,10 @@ SPEC REPOS:
     - FirebaseCrashlytics
     - FirebaseFirestore
     - FirebaseFirestoreInternal
+    - FirebaseFunctions
     - FirebaseInstallations
     - FirebaseMessaging
+    - FirebaseMessagingInterop
     - FirebasePerformance
     - FirebaseRemoteConfig
     - FirebaseRemoteConfigInterop
@@ -1340,6 +1355,8 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor-firebase/crashlytics"
   CapacitorFirebaseFirestore:
     :path: "../../node_modules/@capacitor-firebase/firestore"
+  CapacitorFirebaseFunctions:
+    :path: "../../node_modules/@capacitor-firebase/functions"
   CapacitorFirebaseMessaging:
     :path: "../../node_modules/@capacitor-firebase/messaging"
   CapacitorFirebasePerformance:
@@ -1372,6 +1389,7 @@ SPEC CHECKSUMS:
   CapacitorFirebaseAppCheck: 2dd8f4e8fc3e152cdd0834a6bcb5a9cbbdf1939f
   CapacitorFirebaseCrashlytics: 7ac40f5422ab4186264cdfa08cfeb96ec4d692c3
   CapacitorFirebaseFirestore: b2b767f0df077ffc22aaf13cce1229121a9a6f0e
+  CapacitorFirebaseFunctions: cdb58d5265f77942db91a4a0fd7dd6292ea6b9ce
   CapacitorFirebaseMessaging: 449f81e1fffcee3f3934680200742d148b9f269e
   CapacitorFirebasePerformance: 6a2f31abc09559c7ea1c81aca2a95d302b86953e
   CapacitorFirebaseRemoteConfig: 59c086a129f693c9c00812d6d10ffcd8eedc2a3a
@@ -1392,8 +1410,10 @@ SPEC CHECKSUMS:
   FirebaseCrashlytics: d3cffa6e6eb4fa9234162dff3ba62e37b93252a6
   FirebaseFirestore: 55636df3da462136352b3465e26a86a988cc792c
   FirebaseFirestoreInternal: 354755e5745ca39862218087d9f754dde20f1059
+  FirebaseFunctions: 09e37af8b314949e90aba43765a6380119caed30
   FirebaseInstallations: 60c1d3bc1beef809fd1ad1189a8057a040c59f2e
   FirebaseMessaging: 087a7c7cadef7b9239f005bc4db823894844f323
+  FirebaseMessagingInterop: 90fd5996764f216d547e672b27c3ee51ce460cd2
   FirebasePerformance: a4077b92b1d5e338dbbfac136ce2c4021a14f055
   FirebaseRemoteConfig: f0879a8dccf4e8905716ed849569130efaeab3e2
   FirebaseRemoteConfigInterop: 70d200c6956ef3b5c3592a95e824c1210682d785
@@ -1411,6 +1431,6 @@ SPEC CHECKSUMS:
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
 
-PODFILE CHECKSUM: 1e30ae3ebfa7d9eb224d30373d52a46b3bb11ef3
+PODFILE CHECKSUM: 6fa47644bec0d7b78031c8d69bc25b868940433b
 
 COCOAPODS: 1.15.2

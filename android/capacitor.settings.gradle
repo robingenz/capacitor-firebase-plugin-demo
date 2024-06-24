@@ -17,6 +17,9 @@ project(':capacitor-firebase-crashlytics').projectDir = new File('../node_module
 include ':capacitor-firebase-firestore'
 project(':capacitor-firebase-firestore').projectDir = new File('../node_modules/@capacitor-firebase/firestore/android')
 
+include ':capacitor-firebase-functions'
+project(':capacitor-firebase-functions').projectDir = new File('../node_modules/@capacitor-firebase/functions/android')
+
 include ':capacitor-firebase-messaging'
 project(':capacitor-firebase-messaging').projectDir = new File('../node_modules/@capacitor-firebase/messaging/android')
 
