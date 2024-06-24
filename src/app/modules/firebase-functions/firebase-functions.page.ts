@@ -27,7 +27,14 @@ export class FirebaseFunctionsPage {
     const result = await FirebaseFunctions.callByName({
       name: 'helloWorld',
       data: {
-        name: 'Test',
+        array: [1, 2, 3],
+        date: new Date(),
+        number: 123,
+        object: {
+          key: 'value',
+        },
+        string: 'Hello World!',
+        boolean: true,
       },
     });
     console.log({ result });
