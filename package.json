@@ -40,7 +40,7 @@
     "@capacitor/keyboard": "7.0.0",
     "@capacitor/status-bar": "7.0.0",
     "@capawesome-team/capacitor-file-opener": "https://pkg.pr.new/capawesome-team/capacitor-plugins/@capawesome-team/capacitor-file-opener@402",
-    "@capawesome/capacitor-file-picker": "https://pkg.pr.new/capawesome-team/capacitor-plugins/@capawesome-team/capacitor-file-opener@402",
+    "@capawesome/capacitor-file-picker": "https://pkg.pr.new/capawesome-team/capacitor-plugins/@capawesome/capacitor-file-picker@402",
     "@ionic/angular": "6.2.9",
     "firebase": "11.2.0",
     "rxjs": "7.5.7",
