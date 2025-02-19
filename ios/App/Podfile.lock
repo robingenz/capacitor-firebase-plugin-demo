@@ -1162,39 +1162,39 @@ PODS:
   - CapacitorCordova (7.0.0)
   - CapacitorFilesystem (7.0.0):
     - Capacitor
-  - CapacitorFirebaseAnalytics (6.3.1):
+  - CapacitorFirebaseAnalytics (7.0.0):
     - Capacitor
-    - CapacitorFirebaseAnalytics/Lite (= 6.3.1)
-  - CapacitorFirebaseAnalytics/Analytics (6.3.1):
+    - CapacitorFirebaseAnalytics/Lite (= 7.0.0)
+  - CapacitorFirebaseAnalytics/Analytics (7.0.0):
     - Capacitor
     - FirebaseAnalytics (~> 11.7.0)
-  - CapacitorFirebaseAnalytics/Lite (6.3.1):
+  - CapacitorFirebaseAnalytics/Lite (7.0.0):
     - Capacitor
-  - CapacitorFirebaseApp (6.3.1):
+  - CapacitorFirebaseApp (7.0.0):
     - Capacitor
     - FirebaseCore (~> 11.7.0)
-  - CapacitorFirebaseAppCheck (6.3.1):
+  - CapacitorFirebaseAppCheck (7.0.0):
     - Capacitor
     - FirebaseAppCheck (~> 11.7.0)
-  - CapacitorFirebaseCrashlytics (6.3.1):
+  - CapacitorFirebaseCrashlytics (7.0.0):
     - Capacitor
     - FirebaseCrashlytics (~> 11.7.0)
-  - CapacitorFirebaseFirestore (6.3.1):
+  - CapacitorFirebaseFirestore (7.0.0):
     - Capacitor
     - FirebaseFirestore (~> 11.7.0)
-  - CapacitorFirebaseFunctions (6.3.1):
+  - CapacitorFirebaseFunctions (7.0.0):
     - Capacitor
     - FirebaseFunctions (~> 11.7.0)
-  - CapacitorFirebaseMessaging (6.3.1):
+  - CapacitorFirebaseMessaging (7.0.0):
     - Capacitor
     - FirebaseMessaging (~> 11.7.0)
-  - CapacitorFirebasePerformance (6.3.1):
+  - CapacitorFirebasePerformance (7.0.0):
     - Capacitor
     - FirebasePerformance (~> 11.7.0)
-  - CapacitorFirebaseRemoteConfig (6.3.1):
+  - CapacitorFirebaseRemoteConfig (7.0.0):
     - Capacitor
     - FirebaseRemoteConfig (~> 11.7.0)
-  - CapacitorFirebaseStorage (6.3.1):
+  - CapacitorFirebaseStorage (7.0.0):
     - Capacitor
     - FirebaseStorage (~> 11.7.0)
   - CapacitorHaptics (7.0.0):
@@ -1203,9 +1203,9 @@ PODS:
     - Capacitor
   - CapacitorStatusBar (7.0.0):
     - Capacitor
-  - CapawesomeCapacitorFilePicker (6.2.0):
+  - CapawesomeCapacitorFilePicker (7.0.0):
     - Capacitor
-  - CapawesomeTeamCapacitorFileOpener (6.1.0):
+  - CapawesomeTeamCapacitorFileOpener (7.0.0):
     - Capacitor
   - FirebaseABTesting (11.7.0):
     - FirebaseCore (~> 11.7.0)
@@ -1589,21 +1589,21 @@ SPEC CHECKSUMS:
   CapacitorApp: 9cb31064a6c6bb2b1438583733a7bf45557fc1da
   CapacitorCordova: 345f93b7edd121db98e4ec20ac94d6d7bcaf7e48
   CapacitorFilesystem: 59a2b7b56a897c6a3de4d04c5718e1d80de9d2f5
-  CapacitorFirebaseAnalytics: 86e771874b584378e0ca990b543c5c3ac7b05da5
-  CapacitorFirebaseApp: 7c3aeabc46c87d299632271af41c4c0c7bd24481
-  CapacitorFirebaseAppCheck: 0e510cc828766dcc428b8189fd7a154cb6c18028
-  CapacitorFirebaseCrashlytics: b64f55ca80adafdd80bbb1ed7ff264866c5cc2fd
-  CapacitorFirebaseFirestore: a2cc452aba6b4fa3f95299e418c78b635dc01b1a
-  CapacitorFirebaseFunctions: 62c1045fac5059e843e7e78673f29a9e0eac99b5
-  CapacitorFirebaseMessaging: a87b4ccc5e9deca2096dfcd5d21afb72e21d71e8
-  CapacitorFirebasePerformance: 687c6bce54a190484635da69c6f9e6f22f32cc08
-  CapacitorFirebaseRemoteConfig: 2bbd46119908544a18ed1b9c1b83bcf18dd0237f
-  CapacitorFirebaseStorage: 569a4c016c8e6a5003bf8bc9c5bb6ae532dbf279
+  CapacitorFirebaseAnalytics: d2dd40daed4c7f18b224d5fc97a49e68c6387d4f
+  CapacitorFirebaseApp: 4547cd23c1fc7f125a108d8cde4e63b8427231ff
+  CapacitorFirebaseAppCheck: 1a987ff6dc8f96a4920d21a67207b1509301d517
+  CapacitorFirebaseCrashlytics: ca4f05539811901dc08bb3019f18be948d5f08a6
+  CapacitorFirebaseFirestore: 37c72998019448fbf5d467c8f1da731eaa882719
+  CapacitorFirebaseFunctions: 957fc49c4580c724b082a2fac81f98ab7f049f41
+  CapacitorFirebaseMessaging: d9a84e43cd86cd858572b199ad0b18574c26ef37
+  CapacitorFirebasePerformance: d25a326e6730b23cc1075f3cd62cc748504bf6bf
+  CapacitorFirebaseRemoteConfig: 7a3331ea8283e12ce2b5a2f1caabdbb231bef5c9
+  CapacitorFirebaseStorage: 9cd1fb116d68ab3da7d9148f0992f66d76aea767
   CapacitorHaptics: 7be406a91e4eb87287f321c6c68e1709d6837b3a
   CapacitorKeyboard: 4db71e694e7afb5d7c0be09b05495c19f7d6c914
   CapacitorStatusBar: a8c4c83ed2e973bdafb979e80e4b00d027832cb7
-  CapawesomeCapacitorFilePicker: 433bf83bc2fd583e55859023f108ba39f3df7cb9
-  CapawesomeTeamCapacitorFileOpener: 6353f705a24ec15b8817e1146876f28caf6bc36f
+  CapawesomeCapacitorFilePicker: 14e5eef9b494c0ced87143d5c03ef690a79c9851
+  CapawesomeTeamCapacitorFileOpener: aaeb926a8ee818184c157460de897f6221ae0220
   FirebaseABTesting: 08b3e19b28504632a9cd03e7a796b355c5d39b27
   FirebaseAnalytics: bc9e565af9044ba8d6c6e4157e4edca8e5fdf7ec
   FirebaseAppCheck: 2bd832b48faa38f7d86f902c57f78af93eae4cdc
