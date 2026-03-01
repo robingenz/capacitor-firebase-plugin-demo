@@ -17,6 +17,7 @@ const LOGTAG = '[FirebaseMessagingPage]';
   selector: 'app-firebase-messaging',
   templateUrl: './firebase-messaging.page.html',
   styleUrls: ['./firebase-messaging.page.scss'],
+  standalone: false,
 })
 export class FirebaseMessagingPage {
   public readonly importance = Importance;

@@ -6,6 +6,7 @@ import { FirebasePerformance } from '@capacitor-firebase/performance';
   selector: 'app-firebase-performance',
   templateUrl: './firebase-performance.page.html',
   styleUrls: ['./firebase-performance.page.scss'],
+  standalone: false,
 })
 export class FirebasePerformancePage {
   private readonly githubUrl =

@@ -5,6 +5,7 @@ import { FirebaseAnalytics } from '@capacitor-firebase/analytics';
   selector: 'app-firebase-analytics',
   templateUrl: './firebase-analytics.page.html',
   styleUrls: ['./firebase-analytics.page.scss'],
+  standalone: false,
 })
 export class FirebaseAnalyticsPage implements OnInit {
   public appInstanceId = '';

@@ -6,6 +6,7 @@ import { FirebaseCrashlytics } from '@capacitor-firebase/crashlytics';
   selector: 'app-firebase-crashlytics',
   templateUrl: './firebase-crashlytics.page.html',
   styleUrls: ['./firebase-crashlytics.page.scss'],
+  standalone: false,
 })
 export class FirebaseCrashlyticsPage {
   public enabled: boolean | undefined;

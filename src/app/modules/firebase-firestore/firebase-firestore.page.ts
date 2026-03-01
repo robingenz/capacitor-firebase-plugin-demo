@@ -12,6 +12,7 @@ import { Capacitor } from '@capacitor/core';
   selector: 'app-firebase-firestore',
   templateUrl: './firebase-firestore.page.html',
   styleUrls: ['./firebase-firestore.page.scss'],
+  standalone: false,
 })
 export class FirebaseFirestorePage {
   private readonly githubUrl =

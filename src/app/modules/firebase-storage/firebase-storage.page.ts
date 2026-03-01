@@ -9,6 +9,7 @@ import { FilePicker } from '@capawesome/capacitor-file-picker';
   selector: 'app-firebase-storage',
   templateUrl: './firebase-storage.page.html',
   styleUrls: ['./firebase-storage.page.scss'],
+  standalone: false,
 })
 export class FirebaseStoragePage implements OnInit {
   public items: StorageReference[] = [];

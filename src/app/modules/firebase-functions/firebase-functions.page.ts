@@ -6,6 +6,7 @@ import { FirebaseFunctions } from '@capacitor-firebase/functions';
   selector: 'app-firebase-functions',
   templateUrl: './firebase-functions.page.html',
   styleUrls: ['./firebase-functions.page.scss'],
+  standalone: false,
 })
 export class FirebaseFunctionsPage {
   private readonly githubUrl =

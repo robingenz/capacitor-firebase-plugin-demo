@@ -9,6 +9,7 @@ import {
   selector: 'app-firebase-remote-config',
   templateUrl: './firebase-remote-config.page.html',
   styleUrls: ['./firebase-remote-config.page.scss'],
+  standalone: false,
 })
 export class FirebaseRemoteConfigPage implements OnInit {
   public key = '';

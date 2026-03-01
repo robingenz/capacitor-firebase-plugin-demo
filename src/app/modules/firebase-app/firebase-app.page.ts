@@ -7,6 +7,7 @@ import { FirebaseApp } from '@capacitor-firebase/app';
   selector: 'app-firebase-app',
   templateUrl: './firebase-app.page.html',
   styleUrls: ['./firebase-app.page.scss'],
+  standalone: false,
 })
 export class FirebaseAppPage implements OnInit {
   public name = '';
