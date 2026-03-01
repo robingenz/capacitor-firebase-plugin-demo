@@ -36,4 +36,24 @@
       <ion-button (click)="writeBatch()">Write batch</ion-button>
     </ion-card-content>
   </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Timestamp, GeoPoint & FieldValue</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button (click)="setDocumentWithSpecialTypes()"
+        >Set with Timestamp & GeoPoint</ion-button
+      >
+      <ion-button (click)="getDocumentWithSpecialTypes()"
+        >Get with Timestamp & GeoPoint</ion-button
+      >
+      <ion-button (click)="updateDocumentWithFieldValues()"
+        >Update with FieldValues</ion-button
+      >
+      <ion-button (click)="deleteFieldValue()">Delete field</ion-button>
+      <ion-button (click)="arrayRemoveFieldValue()"
+        >Array remove</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -1224,7 +1224,7 @@ PODS:
   - CapacitorFirebaseCrashlytics (7.0.0-dev.1765887457):
     - Capacitor
     - FirebaseCrashlytics (~> 12.7.0)
-  - CapacitorFirebaseFirestore (7.0.0-dev.1765887457):
+  - CapacitorFirebaseFirestore (8.1.0):
     - Capacitor
     - FirebaseFirestore (~> 12.7.0)
   - CapacitorFirebaseFunctions (7.0.0-dev.1765887457):
@@ -1635,7 +1635,7 @@ SPEC CHECKSUMS:
   CapacitorFirebaseApp: 822e0dd393e5df8db735a442e171a2230f73ce09
   CapacitorFirebaseAppCheck: bf4d91b325cfa032b048ad0a8c719e01f7f1a0c6
   CapacitorFirebaseCrashlytics: 397b71f1eebe9265c2f86d484df6ca3a10bb5acf
-  CapacitorFirebaseFirestore: 5358d9b7ec718f6323319d5af6068d853922f5aa
+  CapacitorFirebaseFirestore: 5149ec50c5a73b6476176f6309ab1d21e713f86a
   CapacitorFirebaseFunctions: 27ed333edcf075c1ea70bfc2236f37ea4e6c633d
   CapacitorFirebaseMessaging: 728cf407111e50d75b266400af9d0df0cfceb0f9
   CapacitorFirebasePerformance: 4d101a1f111921ecddd4941f7d68f0d654bf6ab2

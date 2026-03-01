@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 import { FirebaseAnalytics } from '@capacitor-firebase/analytics';
-import { FirebaseFirestore } from '@capacitor-firebase/firestore';
+import {
+  FieldValue,
+  FirebaseFirestore,
+  GeoPoint,
+  Timestamp,
+} from '@capacitor-firebase/firestore';
 import { Capacitor } from '@capacitor/core';
 
 @Component({
@@ -75,6 +80,68 @@ export class FirebaseFirestorePage {
           },
         },
       ],
+    });
+  }
+
+  public async setDocumentWithSpecialTypes(): Promise<void> {
+    await FirebaseFirestore.setDocument({
+      reference: `samples/${Capacitor.getPlatform()}-special`,
+      data: {
+        timestamp: Timestamp.now(),
+        timestampFromDate: Timestamp.fromDate(new Date('2025-01-01')),
+        geopoint: new GeoPoint(48.1351, 11.582),
+        nestedTimestamp: {
+          createdAt: Timestamp.now(),
+        },
+        string: 'Hello, Special Types!',
+      },
+    });
+  }
+
+  public async getDocumentWithSpecialTypes(): Promise<void> {
+    const result = await FirebaseFirestore.getDocument({
+      reference: `samples/${Capacitor.getPlatform()}-special`,
+    });
+    console.log({ result });
+    const data = result.snapshot.data as any;
+    if (data) {
+      console.log('timestamp:', data.timestamp);
+      console.log('timestamp.toDate():', data.timestamp?.toDate());
+      console.log('geopoint:', data.geopoint);
+      console.log('geopoint.latitude:', data.geopoint?.latitude);
+      console.log(
+        'nestedTimestamp:',
+        data.nestedTimestamp?.createdAt?.toDate(),
+      );
+    }
+  }
+
+  public async updateDocumentWithFieldValues(): Promise<void> {
+    await FirebaseFirestore.updateDocument({
+      reference: `samples/${Capacitor.getPlatform()}-special`,
+      data: {
+        updatedAt: FieldValue.serverTimestamp(),
+        tags: FieldValue.arrayUnion('firebase', 'capacitor'),
+        views: FieldValue.increment(1),
+      },
+    });
+  }
+
+  public async deleteFieldValue(): Promise<void> {
+    await FirebaseFirestore.updateDocument({
+      reference: `samples/${Capacitor.getPlatform()}-special`,
+      data: {
+        string: FieldValue.delete(),
+      },
+    });
+  }
+
+  public async arrayRemoveFieldValue(): Promise<void> {
+    await FirebaseFirestore.updateDocument({
+      reference: `samples/${Capacitor.getPlatform()}-special`,
+      data: {
+        tags: FieldValue.arrayRemove('capacitor'),
+      },
     });
   }
 
