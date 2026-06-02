@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 env:
-  NODE_VERSION: 22
+  NODE_VERSION: 24
   JAVA_VERSION: 21
 
 jobs:
@@ -67,7 +67,7 @@ jobs:
         run: ./gradlew build
   ios:
     name: Build iOS platform
-    runs-on: macos-14
+    runs-on: macos-latest
     needs: [build]
     steps:
       - name: Checkout
@@ -94,7 +94,7 @@ jobs:
       - name: Build and archive with xcodebuild
         working-directory: ios
         run: xcodebuild
-          -workspace App/App.xcworkspace
+          -project App/App.xcodeproj
           -scheme App
           -archivePath App/build/App.xarchive
           clean build archive
