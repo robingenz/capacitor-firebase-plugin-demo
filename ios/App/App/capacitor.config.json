@@ -6,6 +6,44 @@
 	"webDir": "www",
 	"plugins": {},
 	"cordova": {},
+	"experimental": {
+		"ios": {
+			"spm": {
+				"packageOptions": {
+					"@capacitor-firebase/analytics": {
+						"symlink": true
+					},
+					"@capacitor-firebase/app": {
+						"symlink": true
+					},
+					"@capacitor-firebase/app-check": {
+						"symlink": true
+					},
+					"@capacitor-firebase/crashlytics": {
+						"symlink": true
+					},
+					"@capacitor-firebase/firestore": {
+						"symlink": true
+					},
+					"@capacitor-firebase/functions": {
+						"symlink": true
+					},
+					"@capacitor-firebase/messaging": {
+						"symlink": true
+					},
+					"@capacitor-firebase/performance": {
+						"symlink": true
+					},
+					"@capacitor-firebase/remote-config": {
+						"symlink": true
+					},
+					"@capacitor-firebase/storage": {
+						"symlink": true
+					}
+				}
+			}
+		}
+	},
 	"packageClassList": [
 		"FirebaseAnalyticsPlugin",
 		"FirebaseAppPlugin",
