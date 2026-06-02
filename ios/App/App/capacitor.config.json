@@ -7,6 +7,12 @@
 	"plugins": {},
 	"cordova": {},
 	"packageClassList": [
+		"FilesystemPlugin",
+		"HapticsPlugin",
+		"KeyboardPlugin",
+		"StatusBarPlugin",
+		"FileOpenerPlugin",
+		"FilePickerPlugin",
 		"FirebaseAnalyticsPlugin",
 		"FirebaseAppPlugin",
 		"FirebaseAppCheckPlugin",
@@ -16,13 +22,6 @@
 		"FirebaseMessagingPlugin",
 		"FirebasePerformancePlugin",
 		"FirebaseRemoteConfigPlugin",
-		"FirebaseStoragePlugin",
-		"AppPlugin",
-		"FilesystemPlugin",
-		"HapticsPlugin",
-		"KeyboardPlugin",
-		"StatusBarPlugin",
-		"FileOpenerPlugin",
-		"FilePickerPlugin"
+		"FirebaseStoragePlugin"
 	]
 }
